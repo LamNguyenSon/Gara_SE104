@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace GARA
 {
-    public partial class Form1 : Form
+    public partial class FtableManager : Form
     {
-        public Form1()
+        public FtableManager()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            //,,
         }
     }
 }
