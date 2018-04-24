@@ -8,7 +8,8 @@
 <h3>Installing</h3>
 <p>Install Visual Studio</p>
 <p>Link:https://www.visualstudio.com/fr/?rr=https%3A%2F%2Fwww.google.com.vn%2F</p>
-
+<p>MySQL Server</p>
+<p>MySQL Management</p>
 <h2>Authors<h2>
 <br/>
 <p>Lam Nguyen - group leader</p>
