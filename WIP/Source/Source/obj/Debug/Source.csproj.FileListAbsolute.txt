@@ -1,0 +1,9 @@
+E:\UIT\Nhập Môn Mềm\File_Gara_SE104\Gara_SE104\WIP\Source\Source\bin\Debug\Source.exe.config
+E:\UIT\Nhập Môn Mềm\File_Gara_SE104\Gara_SE104\WIP\Source\Source\bin\Debug\Source.exe
+E:\UIT\Nhập Môn Mềm\File_Gara_SE104\Gara_SE104\WIP\Source\Source\bin\Debug\Source.pdb
+E:\UIT\Nhập Môn Mềm\File_Gara_SE104\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csprojResolveAssemblyReference.cache
+E:\UIT\Nhập Môn Mềm\File_Gara_SE104\Gara_SE104\WIP\Source\Source\obj\Debug\Source.Form1.resources
+E:\UIT\Nhập Môn Mềm\File_Gara_SE104\Gara_SE104\WIP\Source\Source\obj\Debug\Source.Properties.Resources.resources
+E:\UIT\Nhập Môn Mềm\File_Gara_SE104\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csproj.GenerateResource.Cache
+E:\UIT\Nhập Môn Mềm\File_Gara_SE104\Gara_SE104\WIP\Source\Source\obj\Debug\Source.exe
+E:\UIT\Nhập Môn Mềm\File_Gara_SE104\Gara_SE104\WIP\Source\Source\obj\Debug\Source.pdb
