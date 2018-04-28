@@ -63,6 +63,46 @@ namespace Source.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2014_aston_martin_rapide_s_test_review_car_and_driver_photo_507236_s_429x262 {
+            get {
+                object obj = ResourceManager.GetObject("2014-aston-martin-rapide-s-test-review-car-and-driver-photo-507236-s-429x262", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap configuration {
+            get {
+                object obj = ResourceManager.GetObject("configuration", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap configuration1 {
+            get {
+                object obj = ResourceManager.GetObject("configuration1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap depositphotos_50098993_stock_photo_blue_wood_texture_of_rough {
+            get {
+                object obj = ResourceManager.GetObject("depositphotos_50098993-stock-photo-blue-wood-texture-of-rough", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap if_Home_34588 {
             get {
                 object obj = ResourceManager.GetObject("if_Home_34588", resourceCulture);

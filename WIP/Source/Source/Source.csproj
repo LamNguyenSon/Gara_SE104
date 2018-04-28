@@ -81,6 +81,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\2014-aston-martin-rapide-s-test-review-car-and-driver-photo-507236-s-429x262.jpg" />
+    <None Include="Resources\configuration.png" />
+    <None Include="image\configuration.png" />
+    <None Include="image\depositphotos_50098993-stock-photo-blue-wood-texture-of-rough.jpg" />
     <Content Include="image\if_Home_34588.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
