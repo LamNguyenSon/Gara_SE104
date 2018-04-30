@@ -8,3 +8,4 @@ D:\SE104_NOT\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csproj.GenerateResour
 D:\SE104_NOT\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csproj.CoreCompileInputs.cache
 D:\SE104_NOT\Gara_SE104\WIP\Source\Source\obj\Debug\Source.exe
 D:\SE104_NOT\Gara_SE104\WIP\Source\Source\obj\Debug\Source.pdb
+D:\SE104_NOT\Gara_SE104\WIP\Source\Source\obj\Debug\Source.PhieuSuaChua.resources

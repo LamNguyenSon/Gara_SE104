@@ -59,9 +59,9 @@
 			this.panel1.Controls.Add(this.button4);
 			this.panel1.Controls.Add(this.button2);
 			this.panel1.Controls.Add(this.button3);
-			this.panel1.Location = new System.Drawing.Point(12, 47);
+			this.panel1.Location = new System.Drawing.Point(12, 35);
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(165, 398);
+			this.panel1.Size = new System.Drawing.Size(182, 343);
 			this.panel1.TabIndex = 101;
 			// 
 			// button1
@@ -85,7 +85,7 @@
 			// 
 			this.button4.Location = new System.Drawing.Point(3, 139);
 			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(131, 23);
+			this.button4.Size = new System.Drawing.Size(157, 37);
 			this.button4.TabIndex = 5;
 			this.button4.Text = "QUẢN LÝ KHÁCH HÀNG";
 			this.button4.UseVisualStyleBackColor = true;
@@ -93,9 +93,9 @@
 			// 
 			// button2
 			// 
-			this.button2.Location = new System.Drawing.Point(3, 159);
+			this.button2.Location = new System.Drawing.Point(3, 182);
 			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(131, 23);
+			this.button2.Size = new System.Drawing.Size(157, 37);
 			this.button2.TabIndex = 3;
 			this.button2.Text = "QUẢN LÝ NHÂN VIÊN";
 			this.button2.UseVisualStyleBackColor = true;
@@ -110,7 +110,7 @@
 			this.button3.Location = new System.Drawing.Point(3, 81);
 			this.button3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
 			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(159, 40);
+			this.button3.Size = new System.Drawing.Size(157, 45);
 			this.button3.TabIndex = 4;
 			this.button3.Text = "QUẢN LÝ PHỤ TÙNG";
 			this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -128,7 +128,8 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
 			this.BackgroundImage = global::Source.Properties.Resources._2014_aston_martin_rapide_s_test_review_car_and_driver_photo_507236_s_429x262;
-			this.ClientSize = new System.Drawing.Size(358, 244);
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.ClientSize = new System.Drawing.Size(600, 435);
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.flowLayoutPanel1);
 			this.MaximizeBox = false;
