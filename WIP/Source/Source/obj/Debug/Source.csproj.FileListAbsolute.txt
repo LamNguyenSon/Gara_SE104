@@ -9,3 +9,15 @@ D:\SE104_NOT\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csproj.CoreCompileInp
 D:\SE104_NOT\Gara_SE104\WIP\Source\Source\obj\Debug\Source.exe
 D:\SE104_NOT\Gara_SE104\WIP\Source\Source\obj\Debug\Source.pdb
 D:\SE104_NOT\Gara_SE104\WIP\Source\Source\obj\Debug\Source.PhieuSuaChua.resources
+C:\Users\MacBook Air\Downloads\DO_AN_NMCNPM\Gara_SE104\WIP\Source\Source\bin\Debug\Source.exe.config
+C:\Users\MacBook Air\Downloads\DO_AN_NMCNPM\Gara_SE104\WIP\Source\Source\bin\Debug\Source.exe
+C:\Users\MacBook Air\Downloads\DO_AN_NMCNPM\Gara_SE104\WIP\Source\Source\bin\Debug\Source.pdb
+C:\Users\MacBook Air\Downloads\DO_AN_NMCNPM\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csprojResolveAssemblyReference.cache
+C:\Users\MacBook Air\Downloads\DO_AN_NMCNPM\Gara_SE104\WIP\Source\Source\obj\Debug\Source.fLogin.resources
+C:\Users\MacBook Air\Downloads\DO_AN_NMCNPM\Gara_SE104\WIP\Source\Source\obj\Debug\Source.Home_page.resources
+C:\Users\MacBook Air\Downloads\DO_AN_NMCNPM\Gara_SE104\WIP\Source\Source\obj\Debug\Source.PhieuSuaChua.resources
+C:\Users\MacBook Air\Downloads\DO_AN_NMCNPM\Gara_SE104\WIP\Source\Source\obj\Debug\Source.Properties.Resources.resources
+C:\Users\MacBook Air\Downloads\DO_AN_NMCNPM\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csproj.GenerateResource.cache
+C:\Users\MacBook Air\Downloads\DO_AN_NMCNPM\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csproj.CoreCompileInputs.cache
+C:\Users\MacBook Air\Downloads\DO_AN_NMCNPM\Gara_SE104\WIP\Source\Source\obj\Debug\Source.exe
+C:\Users\MacBook Air\Downloads\DO_AN_NMCNPM\Gara_SE104\WIP\Source\Source\obj\Debug\Source.pdb
