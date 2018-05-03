@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,10 +52,34 @@
     <Compile Include="Home_page.Designer.cs">
       <DependentUpon>Home_page.cs</DependentUpon>
     </Compile>
+    <Compile Include="LẬP PHIẾU THU TIỀN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LẬP PHIẾU THU TIỀN.Designer.cs">
+      <DependentUpon>LẬP PHIẾU THU TIỀN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PHIẾU THU TIỀN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PHIẾU THU TIỀN.Designer.cs">
+      <DependentUpon>PHIẾU THU TIỀN.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quản lý Nhân viên.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quản lý Nhân viên.Designer.cs">
+      <DependentUpon>Quản lý Nhân viên.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Home_page.resx">
       <DependentUpon>Home_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LẬP PHIẾU THU TIỀN.resx">
+      <DependentUpon>LẬP PHIẾU THU TIỀN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PHIẾU THU TIỀN.resx">
+      <DependentUpon>PHIẾU THU TIỀN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +91,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Quản lý Nhân viên.resx">
+      <DependentUpon>Quản lý Nhân viên.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

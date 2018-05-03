@@ -8,3 +8,14 @@ D:\SE104_NOT\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csproj.GenerateResour
 D:\SE104_NOT\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csproj.CoreCompileInputs.cache
 D:\SE104_NOT\Gara_SE104\WIP\Source\Source\obj\Debug\Source.exe
 D:\SE104_NOT\Gara_SE104\WIP\Source\Source\obj\Debug\Source.pdb
+D:\mềm\Gara_SE104\WIP\Source\Source\bin\Debug\Source.exe.config
+D:\mềm\Gara_SE104\WIP\Source\Source\bin\Debug\Source.exe
+D:\mềm\Gara_SE104\WIP\Source\Source\bin\Debug\Source.pdb
+D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csprojResolveAssemblyReference.cache
+D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.Home_page.resources
+D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.Properties.Resources.resources
+D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.Quản_lý_Nhân_viên.resources
+D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csproj.GenerateResource.cache
+D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csproj.CoreCompileInputs.cache
+D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.exe
+D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.pdb
