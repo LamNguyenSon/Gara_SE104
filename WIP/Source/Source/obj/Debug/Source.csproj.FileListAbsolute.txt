@@ -19,3 +19,5 @@ D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csproj.GenerateResource.c
 D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csproj.CoreCompileInputs.cache
 D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.exe
 D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.pdb
+D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.LẬP_PHIẾU_THU_TIỀN.resources
+D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.PHIẾU_THU_TIỀN.resources

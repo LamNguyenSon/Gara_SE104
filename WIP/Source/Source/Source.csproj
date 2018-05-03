@@ -52,17 +52,17 @@
     <Compile Include="Home_page.Designer.cs">
       <DependentUpon>Home_page.cs</DependentUpon>
     </Compile>
-    <Compile Include="LẬP PHIẾU THU TIỀN.cs">
+    <Compile Include="Lập Phiếu thu tiền.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LẬP PHIẾU THU TIỀN.Designer.cs">
-      <DependentUpon>LẬP PHIẾU THU TIỀN.cs</DependentUpon>
+    <Compile Include="Lập Phiếu thu tiền.Designer.cs">
+      <DependentUpon>Lập Phiếu thu tiền.cs</DependentUpon>
     </Compile>
-    <Compile Include="PHIẾU THU TIỀN.cs">
+    <Compile Include="Phiếu thu tiền.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PHIẾU THU TIỀN.Designer.cs">
-      <DependentUpon>PHIẾU THU TIỀN.cs</DependentUpon>
+    <Compile Include="Phiếu thu tiền.Designer.cs">
+      <DependentUpon>Phiếu thu tiền.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,11 +75,11 @@
     <EmbeddedResource Include="Home_page.resx">
       <DependentUpon>Home_page.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LẬP PHIẾU THU TIỀN.resx">
-      <DependentUpon>LẬP PHIẾU THU TIỀN.cs</DependentUpon>
+    <EmbeddedResource Include="Lập Phiếu thu tiền.resx">
+      <DependentUpon>Lập Phiếu thu tiền.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PHIẾU THU TIỀN.resx">
-      <DependentUpon>PHIẾU THU TIỀN.cs</DependentUpon>
+    <EmbeddedResource Include="Phiếu thu tiền.resx">
+      <DependentUpon>Phiếu thu tiền.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
