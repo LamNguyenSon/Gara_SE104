@@ -1,6 +1,6 @@
 ﻿namespace Source.Resources
 {
-	partial class Nhanvien
+	partial class Khachhang
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -28,10 +28,19 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
+			this.SuspendLayout();
+			// 
+			// Khachhang
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Text = "Nhanvien";
+			this.Name = "Khachhang";
+			this.Text = "Khachhang";
+			this.Load += new System.EventHandler(this.Nhanvien_Load);
+			this.Click += new System.EventHandler(this.Khachhang_Click);
+			this.ResumeLayout(false);
+
 		}
 
 		#endregion

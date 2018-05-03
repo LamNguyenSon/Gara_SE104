@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Source.Resources
 {
-	public partial class Nhanvien : Form
+	public partial class Khachhang : Form
 	{
-		public Nhanvien()
+		public Khachhang()
 		{
 			InitializeComponent();
+		}
+
+		private void Nhanvien_Load(object sender, EventArgs e)
+		{
+
+		}
+
+		private void Khachhang_Click(object sender, EventArgs e)
+		{
+
 		}
 	}
 }

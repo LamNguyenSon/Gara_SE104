@@ -73,6 +73,26 @@ namespace Source.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cabinet_with_motorcycle {
+            get {
+                object obj = ResourceManager.GetObject("cabinet-with-motorcycle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Car_garage_GettyImages_528098460_58a1fba93df78c475869ff29__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Car-garage-GettyImages-528098460-58a1fba93df78c475869ff29 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap configuration {
             get {
                 object obj = ResourceManager.GetObject("configuration", resourceCulture);
@@ -106,6 +126,27 @@ namespace Source.Properties {
         internal static System.Drawing.Bitmap if_Home_34588 {
             get {
                 object obj = ResourceManager.GetObject("if_Home_34588", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images {
+            get {
+                object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Lovely_Garage_Recessed_Lighting_56_With_Additional_Recessed_Lighting_With_Ceiling_Fan_with_Garage_Recessed_Lighting {
+            get {
+                object obj = ResourceManager.GetObject("Lovely-Garage-Recessed-Lighting-56-With-Additional-Recessed-Lighting-With-Ceiling" +
+                        "-Fan-with-Garage-Recessed-Lighting", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

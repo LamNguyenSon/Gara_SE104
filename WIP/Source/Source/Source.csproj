@@ -59,11 +59,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resources\Nhanvien.cs">
+    <Compile Include="Resources\Khachhang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Resources\Nhanvien.Designer.cs">
-      <DependentUpon>Nhanvien.cs</DependentUpon>
+    <Compile Include="Resources\Khachhang.Designer.cs">
+      <DependentUpon>Khachhang.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Home_page.resx">
       <DependentUpon>Home_page.cs</DependentUpon>
@@ -81,6 +81,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Resources\Khachhang.resx">
+      <DependentUpon>Khachhang.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -96,6 +99,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="Resources\Lovely-Garage-Recessed-Lighting-56-With-Additional-Recessed-Lighting-With-Ceiling-Fan-with-Garage-Recessed-Lighting.jpg" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\cabinet-with-motorcycle.jpg" />
+    <None Include="Resources\Car-garage-GettyImages-528098460-58a1fba93df78c475869ff29 %281%29.jpg" />
     <None Include="Resources\2014-aston-martin-rapide-s-test-review-car-and-driver-photo-507236-s-429x262.jpg" />
     <None Include="Resources\configuration.png" />
     <None Include="image\configuration.png" />
