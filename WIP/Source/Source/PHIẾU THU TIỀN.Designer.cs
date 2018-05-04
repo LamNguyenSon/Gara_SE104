@@ -67,6 +67,7 @@
 			this.label6 = new System.Windows.Forms.Label();
 			this.button2 = new System.Windows.Forms.Button();
 			this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+			this.button3 = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -420,7 +421,7 @@
 			// 
 			// button2
 			// 
-			this.button2.Location = new System.Drawing.Point(328, 406);
+			this.button2.Location = new System.Drawing.Point(472, 406);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(146, 22);
 			this.button2.TabIndex = 8;
@@ -436,11 +437,21 @@
 			this.checkedListBox1.Size = new System.Drawing.Size(120, 94);
 			this.checkedListBox1.TabIndex = 9;
 			// 
+			// button3
+			// 
+			this.button3.Location = new System.Drawing.Point(641, 406);
+			this.button3.Name = "button3";
+			this.button3.Size = new System.Drawing.Size(87, 22);
+			this.button3.TabIndex = 10;
+			this.button3.Text = "Thoát";
+			this.button3.UseVisualStyleBackColor = true;
+			// 
 			// PHIẾU_THU_TIỀN
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(767, 444);
+			this.Controls.Add(this.button3);
 			this.Controls.Add(this.checkedListBox1);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.label6);
@@ -499,5 +510,6 @@
 		private System.Windows.Forms.Label label17;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.CheckedListBox checkedListBox1;
+		private System.Windows.Forms.Button button3;
 	}
 }
