@@ -54,7 +54,9 @@ namespace Source
 
 		private void button2_Click(object sender, EventArgs e)
 		{
-			
+			LẬP_PHIẾU_THU_TIỀN f = new LẬP_PHIẾU_THU_TIỀN();
+			this.Hide();
+			f.ShowDialog();
 		}
 	}
 }

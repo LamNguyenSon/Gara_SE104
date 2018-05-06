@@ -29,22 +29,26 @@ namespace Source
 
 		private void button2_Click(object sender, EventArgs e)
 		{
-
+			QUẢN_LÝ_NHÂN_VIÊN f = new QUẢN_LÝ_NHÂN_VIÊN();
+			this.Hide();
+			f.ShowDialog();
 		}
 
 		private void button4_Click(object sender, EventArgs e)
 		{
-
+			
 		}
 
 		private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
 		{
-
+			
 		}
 
 		private void button3_Click(object sender, EventArgs e)
 		{
-
+			PHIẾU_THU_TIỀN f = new PHIẾU_THU_TIỀN();
+			this.Hide();
+			f.ShowDialog();
 		}
 
 		private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)

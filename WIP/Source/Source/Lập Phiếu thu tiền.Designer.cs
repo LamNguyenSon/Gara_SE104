@@ -29,38 +29,38 @@
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.txtMaTT = new System.Windows.Forms.TextBox();
 			this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-			this.button1 = new System.Windows.Forms.Button();
+			this.btnLuu = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button3 = new System.Windows.Forms.Button();
+			this.txtTienThu = new System.Windows.Forms.TextBox();
+			this.btnInPhieu = new System.Windows.Forms.Button();
+			this.btnThoat = new System.Windows.Forms.Button();
+			this.dtNgayThu = new System.Windows.Forms.DateTimePicker();
 			this.SuspendLayout();
 			// 
-			// textBox1
+			// txtMaTT
 			// 
-			this.textBox1.Location = new System.Drawing.Point(113, 19);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(130, 20);
-			this.textBox1.TabIndex = 0;
+			this.txtMaTT.Location = new System.Drawing.Point(113, 19);
+			this.txtMaTT.Name = "txtMaTT";
+			this.txtMaTT.Size = new System.Drawing.Size(130, 20);
+			this.txtMaTT.TabIndex = 0;
 			// 
 			// contextMenuStrip1
 			// 
 			this.contextMenuStrip1.Name = "contextMenuStrip1";
 			this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
 			// 
-			// button1
+			// btnLuu
 			// 
-			this.button1.Location = new System.Drawing.Point(175, 108);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(91, 27);
-			this.button1.TabIndex = 2;
-			this.button1.Text = "Lưu";
-			this.button1.UseVisualStyleBackColor = true;
+			this.btnLuu.Location = new System.Drawing.Point(175, 108);
+			this.btnLuu.Name = "btnLuu";
+			this.btnLuu.Size = new System.Drawing.Size(91, 27);
+			this.btnLuu.TabIndex = 2;
+			this.btnLuu.Text = "Lưu";
+			this.btnLuu.UseVisualStyleBackColor = true;
 			// 
 			// label1
 			// 
@@ -90,52 +90,53 @@
 			this.label3.TabIndex = 5;
 			this.label3.Text = "Ngày Thu";
 			// 
-			// textBox2
+			// txtTienThu
 			// 
-			this.textBox2.Location = new System.Drawing.Point(113, 53);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(130, 20);
-			this.textBox2.TabIndex = 6;
+			this.txtTienThu.Location = new System.Drawing.Point(113, 53);
+			this.txtTienThu.Name = "txtTienThu";
+			this.txtTienThu.Size = new System.Drawing.Size(130, 20);
+			this.txtTienThu.TabIndex = 6;
 			// 
-			// textBox3
+			// btnInPhieu
 			// 
-			this.textBox3.Location = new System.Drawing.Point(389, 19);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(130, 20);
-			this.textBox3.TabIndex = 7;
+			this.btnInPhieu.Location = new System.Drawing.Point(274, 108);
+			this.btnInPhieu.Name = "btnInPhieu";
+			this.btnInPhieu.Size = new System.Drawing.Size(91, 27);
+			this.btnInPhieu.TabIndex = 8;
+			this.btnInPhieu.Text = "In phiếu";
+			this.btnInPhieu.UseVisualStyleBackColor = true;
 			// 
-			// button2
+			// btnThoat
 			// 
-			this.button2.Location = new System.Drawing.Point(274, 108);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(91, 27);
-			this.button2.TabIndex = 8;
-			this.button2.Text = "In phiếu";
-			this.button2.UseVisualStyleBackColor = true;
+			this.btnThoat.Location = new System.Drawing.Point(380, 108);
+			this.btnThoat.Name = "btnThoat";
+			this.btnThoat.Size = new System.Drawing.Size(91, 27);
+			this.btnThoat.TabIndex = 9;
+			this.btnThoat.Text = "Thoát";
+			this.btnThoat.UseVisualStyleBackColor = true;
 			// 
-			// button3
+			// dtNgayThu
 			// 
-			this.button3.Location = new System.Drawing.Point(380, 108);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(91, 27);
-			this.button3.TabIndex = 9;
-			this.button3.Text = "Thoát";
-			this.button3.UseVisualStyleBackColor = true;
+			this.dtNgayThu.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+			this.dtNgayThu.Location = new System.Drawing.Point(371, 19);
+			this.dtNgayThu.Name = "dtNgayThu";
+			this.dtNgayThu.Size = new System.Drawing.Size(139, 20);
+			this.dtNgayThu.TabIndex = 10;
 			// 
 			// LẬP_PHIẾU_THU_TIỀN
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(611, 180);
-			this.Controls.Add(this.button3);
-			this.Controls.Add(this.button2);
-			this.Controls.Add(this.textBox3);
-			this.Controls.Add(this.textBox2);
+			this.Controls.Add(this.dtNgayThu);
+			this.Controls.Add(this.btnThoat);
+			this.Controls.Add(this.btnInPhieu);
+			this.Controls.Add(this.txtTienThu);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.btnLuu);
+			this.Controls.Add(this.txtMaTT);
 			this.Name = "LẬP_PHIẾU_THU_TIỀN";
 			this.Text = "LẬP PHIẾU THU TIỀN";
 			this.ResumeLayout(false);
@@ -145,15 +146,15 @@
 
 		#endregion
 
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox txtMaTT;
 		private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button btnLuu;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.TextBox textBox3;
-		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.Button button3;
+		private System.Windows.Forms.TextBox txtTienThu;
+		private System.Windows.Forms.Button btnInPhieu;
+		private System.Windows.Forms.Button btnThoat;
+		private System.Windows.Forms.DateTimePicker dtNgayThu;
 	}
 }
