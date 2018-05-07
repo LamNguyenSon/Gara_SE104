@@ -8,13 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GARA
+namespace Source.Resources
 {
-    public partial class FtableManager : Form
-    {
-        public FtableManager()
-        {
-            InitializeComponent();
-        }
-    }
+	public partial class QuanLyNhanVien : Form
+	{
+		public QuanLyNhanVien()
+		{
+			InitializeComponent();
+		}
+	}
 }

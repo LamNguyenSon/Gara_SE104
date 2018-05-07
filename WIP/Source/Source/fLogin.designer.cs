@@ -1,4 +1,4 @@
-﻿namespace GARA
+﻿namespace Source
 {
     partial class fLogin
     {

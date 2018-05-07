@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GARA.Properties
+namespace Source.Properties
 {
 
 

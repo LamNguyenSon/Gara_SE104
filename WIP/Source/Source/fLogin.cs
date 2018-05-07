@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-namespace GARA
+// sửa namspace ->quick actions
+namespace Source
 {
     public partial class fLogin : Form
     {
@@ -25,7 +25,7 @@ namespace GARA
         private void button1_Click(object sender, EventArgs e)
         {
             //Vào chương trình 
-            FtableManager f = new FtableManager();
+            Home_page f = new Home_page();
             this.Hide();
             f.ShowDialog();
             this.Show();
