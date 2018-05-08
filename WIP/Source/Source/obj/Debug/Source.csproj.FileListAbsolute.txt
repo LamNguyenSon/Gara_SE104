@@ -26,3 +26,4 @@ C:\Users\MacBook Air\Downloads\DO_AN_NMCNPM\Gara_SE104\WIP\Source\Source\obj\Deb
 C:\Users\MacBook Air\Downloads\DO_AN_NMCNPM\Gara_SE104\WIP\Source\Source\obj\Debug\Source.pdb
 >>>>>>> 5e064c9b6d8289841c863fd3f0176841b969018f
 D:\SE104_NOT\Gara_SE104\WIP\Source\Source\obj\Debug\Source.fLogin.resources
+D:\SE104_NOT\Gara_SE104\WIP\Source\Source\obj\Debug\Source.Capnhatkhachhang.resources

@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Capnhatkhachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capnhatkhachhang.Designer.cs">
+      <DependentUpon>Capnhatkhachhang.cs</DependentUpon>
+    </Compile>
     <Compile Include="fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +63,7 @@
     <Compile Include="Home_page.Designer.cs">
       <DependentUpon>Home_page.cs</DependentUpon>
     </Compile>
+    <Compile Include="ketnoi.cs" />
     <Compile Include="PhieuSuaChua.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +78,9 @@
     <Compile Include="Resources\Khachhang.Designer.cs">
       <DependentUpon>Khachhang.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Capnhatkhachhang.resx">
+      <DependentUpon>Capnhatkhachhang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,12 +118,6 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <None Include="Resources\Lovely-Garage-Recessed-Lighting-56-With-Additional-Recessed-Lighting-With-Ceiling-Fan-with-Garage-Recessed-Lighting.jpg" />
-    <None Include="Resources\images.jpg" />
-    <None Include="Resources\cabinet-with-motorcycle.jpg" />
-    <None Include="Resources\Car-garage-GettyImages-528098460-58a1fba93df78c475869ff29 %281%29.jpg" />
-    <None Include="Resources\2014-aston-martin-rapide-s-test-review-car-and-driver-photo-507236-s-429x262.jpg" />
-    <None Include="Resources\configuration.png" />
     <None Include="image\configuration.png" />
     <None Include="image\depositphotos_50098993-stock-photo-blue-wood-texture-of-rough.jpg" />
     <Content Include="image\if_Home_34588.png" />

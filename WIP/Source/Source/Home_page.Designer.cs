@@ -45,7 +45,7 @@
 			this.panel1.Controls.Add(this.khachhang);
 			this.panel1.Controls.Add(this.Nhanvien);
 			this.panel1.Controls.Add(this.Phutung);
-			this.panel1.Location = new System.Drawing.Point(12, 35);
+			this.panel1.Location = new System.Drawing.Point(53, 40);
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(162, 343);
 			this.panel1.TabIndex = 101;
@@ -115,9 +115,9 @@
 			this.flowLayoutPanel1.Enabled = false;
 			this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
 			this.flowLayoutPanel1.ImeMode = System.Windows.Forms.ImeMode.Hiragana;
-			this.flowLayoutPanel1.Location = new System.Drawing.Point(53, 26);
+			this.flowLayoutPanel1.Location = new System.Drawing.Point(1, 26);
 			this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-			this.flowLayoutPanel1.Size = new System.Drawing.Size(603, 66);
+			this.flowLayoutPanel1.Size = new System.Drawing.Size(664, 66);
 			this.flowLayoutPanel1.TabIndex = 100;
 			this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
 			// 
@@ -125,7 +125,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
+			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.ClientSize = new System.Drawing.Size(668, 435);
 			this.Controls.Add(this.panel1);

@@ -17,12 +17,22 @@ namespace Source.Resources
 			InitializeComponent();
 		}
 
+		public void GetDSKH()
+		{
+
+		}
+
 		private void Nhanvien_Load(object sender, EventArgs e)
 		{
 
 		}
 
 		private void Khachhang_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
 		{
 
 		}
