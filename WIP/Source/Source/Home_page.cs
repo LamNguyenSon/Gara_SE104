@@ -57,7 +57,7 @@ namespace Source
 
 		private void nhanvien_Click(object sender, EventArgs e)
 		{
-		
+
 		}
 	}
 }
