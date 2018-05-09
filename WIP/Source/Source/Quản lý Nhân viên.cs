@@ -203,18 +203,6 @@ namespace Source
 			}
 			return true;
 		}
-		public void dataGridNhanVien_SelectionChanged(object sender, EventArgs e)
-		{
-			int index = dataGridNhanVien.CurrentCell.RowIndex;
-			DataTable dt = (DataTable)dataGridNhanVien.DataSource;
-			if(dt.Rows.Count > 0)
-			{
-				txtMaNV.Text = dataGridNhanVien.Rows[index].Cells[0].Value.ToString();
-				txtHoTen.Text = dataGridNhanVien.Rows[index].Cells[1].Value.ToString();
-				txtDiaChi.Text = dataGridNhanVien.Rows[index].Cells[2].Value.ToString();
-				txtCMND.Text = dataGridNhanVien.Rows[index].Cells[3].Value.ToString();
-				cbGioiTinh.Text = dataGridNhanVien.Rows[index].Cells[4].Value.ToString();
-			}
 		}
 	}
 }
