@@ -63,6 +63,7 @@
     <Compile Include="Home_page.Designer.cs">
       <DependentUpon>Home_page.cs</DependentUpon>
     </Compile>
+    <Compile Include="ketnoi.cs" />
     <Compile Include="PhieuSuaChua.cs">
       <SubType>Form</SubType>
     </Compile>
