@@ -19,17 +19,17 @@ namespace Source
         public Home_page()
         {
             InitializeComponent();
-            loadaccountlist();
+            //loadaccountlist();
         }
-        public void loadaccountlist()
-        {
-            //EXEC GETACCOUNTBYUSERNAME @USERNAME
-            string query = "SELECT *FROM dbo.TAIKHOAN ";
-            //string query = "INSERT INTO TAIKHOAN VALUES('TK06','NV6','123456','07/02/1788')";
-            DATAPROVIDER provider = new DATAPROVIDER();
-            dataGridView1.DataSource = provider.Executequery(query/*,new object[] { "NV2" }*/);
+        //public void loadaccountlist()
+        //{
+        //    //EXEC GETACCOUNTBYUSERNAME @USERNAME
+        //    string query = "SELECT *FROM dbo.TAIKHOAN ";
+        //    //string query = "INSERT INTO TAIKHOAN VALUES('TK06','NV6','123456','07/02/1788')";
+        //    DATAPROVIDER provider = new DATAPROVIDER();
+        //    dataGridView1.DataSource = provider.Executequery(query/*,new object[] { "NV2" }*/);
             
-        }
+        //}
         private void Form1_Load(object sender, EventArgs e)
         {
 

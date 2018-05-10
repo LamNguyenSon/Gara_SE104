@@ -17,13 +17,13 @@ namespace Source.DAO
             private set { instance = value; }
         }
         public accountDAO() { }
-        public bool login(string username,string password)
-        {
-            String query = "SELECT *FROM TAIKHOAN WHERE TENDN=N'" + username + "' AND MATKHAU='" + password + "' ";
-            DATAPROVIDER data = new DATAPROVIDER();
-            DataTable result = data.Executequery(query);
-            return result.Rows.Count>0;//ĐẾM SỐ DÒNG
-        }
+		public bool login(string username, string password)
+		{
+			String query = "SELECT *FROM TAIKHOAN WHERE TENDN=N'" + username + "' AND MATKHAU='" + password + "' ";
+			DATAPROVIDER data = new DATAPROVIDER();
+			DataTable result = data.Executequery(query);
+			return result.Rows.Count > 0;//ĐẾM SỐ DÒNG
+		}
 
-    }
+	}
 }

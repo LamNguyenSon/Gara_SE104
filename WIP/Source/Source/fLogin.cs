@@ -28,27 +28,27 @@ namespace Source
             //Vào chương trình 
             string username = textusername.Text;
             string password = textpassword.Text;
-            if (login(username,password))
-            {
-                Home_page f = new Home_page();
-                this.Hide();
-                f.ShowDialog();
-                this.Show();
-            }
-            else
-            {
-                MessageBox.Show("Sai tên tài khoản hoặc mật khẩu !");
-            }
+			if (login(username, password))
+			{
+				Home_page f = new Home_page();
+				this.Hide();
+				f.ShowDialog();
+				this.Show();
+			}
+			else
+			{
+				MessageBox.Show("Sai tên tài khoản hoặc mật khẩu !");
+			}
 
 
-        }
-        bool login(string username,string password)
-        {
-            accountDAO acc = new accountDAO();
-            return acc.login(username,password);
-            
-        }
-        private void button2_Click(object sender, EventArgs e)
+		}
+		bool login(string username, string password)
+		{
+			accountDAO acc = new accountDAO();
+			return acc.login(username,password);
+
+		}
+		private void button2_Click(object sender, EventArgs e)
         {
             //thoát chương trình
             Application.Exit();
