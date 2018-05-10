@@ -10,6 +10,10 @@ namespace Source
 {
 	class ketnoi
 	{
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 		public SqlConnection kn = new SqlConnection();
 		public void kn_csdl()
 		{

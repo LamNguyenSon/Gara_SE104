@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Source.Resources;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,9 +35,15 @@ namespace Source
 			f.ShowDialog();
 		}
 
-		private void button4_Click(object sender, EventArgs e)
+		private void khachhang_Click(object sender, EventArgs e)
 		{
+<<<<<<< HEAD
 			
+=======
+			Khachhang f = new Khachhang();
+			this.Hide();
+			f.ShowDialog();
+>>>>>>> origin/master
 		}
 
 		private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -52,6 +59,11 @@ namespace Source
 		}
 
 		private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+
+		private void nhanvien_Click(object sender, EventArgs e)
 		{
 
 		}

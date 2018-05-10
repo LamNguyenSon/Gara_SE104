@@ -28,87 +28,96 @@
         /// </summary>
         private void InitializeComponent()
         {
-			this.listBox1 = new System.Windows.Forms.ListBox();
+			this.panel1 = new System.Windows.Forms.Panel();
 			this.button1 = new System.Windows.Forms.Button();
-			this.button2 = new System.Windows.Forms.Button();
-			this.button3 = new System.Windows.Forms.Button();
-			this.button4 = new System.Windows.Forms.Button();
+			this.khachhang = new System.Windows.Forms.Button();
+			this.Nhanvien = new System.Windows.Forms.Button();
+			this.Phutung = new System.Windows.Forms.Button();
 			this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+			this.panel1.SuspendLayout();
 			this.SuspendLayout();
 			// 
-			// listBox1
+			// panel1
 			// 
-			this.listBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(109)))), ((int)(((byte)(175)))));
-			this.listBox1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-			this.listBox1.ForeColor = System.Drawing.Color.Green;
-			this.listBox1.FormatString = "N2";
-			this.listBox1.FormattingEnabled = true;
-			this.listBox1.HorizontalScrollbar = true;
-			this.listBox1.ImeMode = System.Windows.Forms.ImeMode.AlphaFull;
-			this.listBox1.Location = new System.Drawing.Point(1, 12);
-			this.listBox1.Margin = new System.Windows.Forms.Padding(0, 0, 0, 1);
-			this.listBox1.Name = "listBox1";
-			this.listBox1.Size = new System.Drawing.Size(166, 381);
-			this.listBox1.TabIndex = 1;
-			this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+			this.panel1.AllowDrop = true;
+			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+			this.panel1.Controls.Add(this.button1);
+			this.panel1.Controls.Add(this.khachhang);
+			this.panel1.Controls.Add(this.Nhanvien);
+			this.panel1.Controls.Add(this.Phutung);
+			this.panel1.Location = new System.Drawing.Point(53, 40);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(162, 343);
+			this.panel1.TabIndex = 101;
 			// 
 			// button1
 			// 
-			this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(112)))), ((int)(((byte)(124)))));
-			this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-			this.button1.Cursor = System.Windows.Forms.Cursors.No;
-			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-			this.button1.Location = new System.Drawing.Point(1, 42);
+			this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(242)))), ((int)(((byte)(237)))));
+			this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.button1.Location = new System.Drawing.Point(0, 54);
+			this.button1.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
 			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(147, 23);
-			this.button1.TabIndex = 2;
+			this.button1.Size = new System.Drawing.Size(162, 41);
+			this.button1.TabIndex = 6;
 			this.button1.Text = "HOME";
-			this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+			this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.button1.UseMnemonic = false;
 			this.button1.UseVisualStyleBackColor = false;
-			this.button1.Click += new System.EventHandler(this.button1_Click);
+			this.button1.UseWaitCursor = true;
 			// 
-			// button2
+			// khachhang
 			// 
-			this.button2.Location = new System.Drawing.Point(1, 170);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(147, 23);
-			this.button2.TabIndex = 3;
-			this.button2.Text = "QUẢN LÝ NHÂN VIÊN";
-			this.button2.UseVisualStyleBackColor = true;
-			this.button2.Click += new System.EventHandler(this.button2_Click);
+			this.khachhang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(242)))), ((int)(((byte)(237)))));
+			this.khachhang.Location = new System.Drawing.Point(0, 128);
+			this.khachhang.Name = "khachhang";
+			this.khachhang.Size = new System.Drawing.Size(162, 41);
+			this.khachhang.TabIndex = 5;
+			this.khachhang.Text = "QUẢN LÝ KHÁCH HÀNG";
+			this.khachhang.UseVisualStyleBackColor = false;
+			this.khachhang.Click += new System.EventHandler(this.khachhang_Click);
 			// 
-			// button3
+			// Nhanvien
 			// 
-			this.button3.Location = new System.Drawing.Point(1, 86);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(147, 23);
-			this.button3.TabIndex = 4;
-			this.button3.Text = "QUẢN LÝ PHỤ TÙNG";
-			this.button3.UseVisualStyleBackColor = true;
-			this.button3.Click += new System.EventHandler(this.button3_Click);
+			this.Nhanvien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(242)))), ((int)(((byte)(237)))));
+			this.Nhanvien.Location = new System.Drawing.Point(0, 163);
+			this.Nhanvien.Name = "Nhanvien";
+			this.Nhanvien.Size = new System.Drawing.Size(162, 41);
+			this.Nhanvien.TabIndex = 3;
+			this.Nhanvien.Text = "QUẢN LÝ NHÂN VIÊN";
+			this.Nhanvien.UseVisualStyleBackColor = false;
+			this.Nhanvien.Click += new System.EventHandler(this.nhanvien_Click);
 			// 
-			// button4
+			// Phutung
 			// 
-			this.button4.Location = new System.Drawing.Point(1, 132);
-			this.button4.Name = "button4";
-			this.button4.Size = new System.Drawing.Size(147, 23);
-			this.button4.TabIndex = 5;
-			this.button4.Text = "QUẢN LÝ KHÁCH HÀNG";
-			this.button4.UseVisualStyleBackColor = true;
-			this.button4.Click += new System.EventHandler(this.button4_Click);
+			this.Phutung.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(242)))), ((int)(((byte)(237)))));
+			this.Phutung.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.Phutung.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.Phutung.Location = new System.Drawing.Point(0, 89);
+			this.Phutung.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
+			this.Phutung.Name = "Phutung";
+			this.Phutung.Size = new System.Drawing.Size(162, 41);
+			this.Phutung.TabIndex = 4;
+			this.Phutung.Text = "QUẢN LÝ PHỤ TÙNG";
+			this.Phutung.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+			this.Phutung.UseMnemonic = false;
+			this.Phutung.UseVisualStyleBackColor = false;
+			this.Phutung.UseWaitCursor = true;
+			this.Phutung.ClientSizeChanged += new System.EventHandler(this.button2_Click);
+			this.Phutung.ContextMenuStripChanged += new System.EventHandler(this.button1_Click);
+			this.Phutung.Click += new System.EventHandler(this.button3_Click);
 			// 
 			// flowLayoutPanel1
 			// 
-			this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(53)))), ((int)(((byte)(39)))));
-			this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+			this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+			this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
 			this.flowLayoutPanel1.Cursor = System.Windows.Forms.Cursors.Arrow;
 			this.flowLayoutPanel1.Enabled = false;
+			this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
 			this.flowLayoutPanel1.ImeMode = System.Windows.Forms.ImeMode.Hiragana;
-			this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 3);
+			this.flowLayoutPanel1.Location = new System.Drawing.Point(1, 26);
 			this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-			this.flowLayoutPanel1.Size = new System.Drawing.Size(636, 77);
+			this.flowLayoutPanel1.Size = new System.Drawing.Size(664, 66);
 			this.flowLayoutPanel1.TabIndex = 100;
 			this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
 			// 
@@ -116,6 +125,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(154)))), ((int)(((byte)(160)))));
 			this.ClientSize = new System.Drawing.Size(660, 411);
 			this.Controls.Add(this.button2);
@@ -123,22 +133,33 @@
 			this.Controls.Add(this.button3);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.listBox1);
+=======
+			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.ClientSize = new System.Drawing.Size(668, 435);
+			this.Controls.Add(this.panel1);
+>>>>>>> origin/master
 			this.Controls.Add(this.flowLayoutPanel1);
+			this.MaximizeBox = false;
 			this.Name = "Home_page";
 			this.ShowIcon = false;
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Main Menu";
+			this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.Load += new System.EventHandler(this.Form1_Load);
+			this.Shown += new System.EventHandler(this.button1_Click);
+			this.panel1.ResumeLayout(false);
 			this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
-		private System.Windows.Forms.Button button2;
-		private System.Windows.Forms.Button button3;
-		private System.Windows.Forms.Button button4;
-		public System.Windows.Forms.ListBox listBox1;
+		private System.Windows.Forms.Button Nhanvien;
+		private System.Windows.Forms.Button Phutung;
+		private System.Windows.Forms.Button khachhang;
 		private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+		private System.Windows.Forms.Panel panel1;
+		private System.Windows.Forms.Button button1;
 	}
 }
 
