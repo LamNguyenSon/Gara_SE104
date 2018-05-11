@@ -23,11 +23,11 @@ namespace Source
         public void loadthongtinsc()
         {
             //EXEC GETACCOUNTBYUSERNAME @USERNAME
-            string query = "SELECT *FROM dbo.THONGTINSUACHUA ";
+           // string query = "SELECT *FROM dbo.THONGTINSUACHUA ";
             //string query = "INSERT INTO TAIKHOAN VALUES('TK06','NV6','123456','07/02/1788')";
-            DATAPROVIDER provider = new DATAPROVIDER();
+            //DATAPROVIDER provider = new DATAPROVIDER();
 
-            dataGridView1.DataSource = provider.Executequery(query/*,new object[] { "NV2" }*/);
+            //dataGridView1.DataSource = provider.Executequery(query/*,new object[] { "NV2" }*/);
 
         }
 

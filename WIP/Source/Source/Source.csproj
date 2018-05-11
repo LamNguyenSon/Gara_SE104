@@ -45,12 +45,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Capnhatkhachhang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Capnhatkhachhang.Designer.cs">
-      <DependentUpon>Capnhatkhachhang.cs</DependentUpon>
-    </Compile>
     <Compile Include="DAO\accountDAO.cs" />
     <Compile Include="DAO\DATAPROVIDER.cs" />
     <Compile Include="fLogin.cs">
@@ -90,9 +84,12 @@
     <Compile Include="QL_SUACHUA.Designer.cs">
       <DependentUpon>QL_SUACHUA.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Capnhatkhachhang.resx">
-      <DependentUpon>Capnhatkhachhang.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="QuanLyTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyTaiKhoan.Designer.cs">
+      <DependentUpon>QuanLyTaiKhoan.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QL_SUACHUA.resx">
       <DependentUpon>QL_SUACHUA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyTaiKhoan.resx">
+      <DependentUpon>QuanLyTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

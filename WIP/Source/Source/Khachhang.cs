@@ -15,7 +15,7 @@ namespace Source.Resources
 	{
 		public void LayBangKH()
 		{
-            DATAPROVIDER kn = new DATAPROVIDER();
+			DATAPROVIDER kn = new DATAPROVIDER();
 			DataTable dt = new DataTable();
 			dt = kn.Executequery("select * from KHACHHANG");
 			dataGridKhachHang.DataSource = dt;

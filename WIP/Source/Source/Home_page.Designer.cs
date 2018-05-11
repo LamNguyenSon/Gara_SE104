@@ -94,6 +94,7 @@
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -213,6 +214,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(466, 406);
             this.panel2.TabIndex = 102;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // dataGridView1
             // 
