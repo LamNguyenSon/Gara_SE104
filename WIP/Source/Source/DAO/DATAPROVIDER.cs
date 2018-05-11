@@ -18,7 +18,9 @@ namespace Source.DAO
             get { if (instance == null) instance = new DATAPROVIDER(); return instance; }
             private set { instance = value; }
         }
-        public DATAPROVIDER() { }
+        public DATAPROVIDER()
+        {
+        }
 
         private string connectionstr = @"Data Source=DESKTOP-6PU4NRQ;Initial Catalog=QL_GARA;Integrated Security=True";
         public DataTable Executequery(string query,Object []para=null)
