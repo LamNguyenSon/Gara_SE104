@@ -45,25 +45,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Capnhatkhachhang.cs" />
-    <Compile Include="Capnhatkhachhang.Designer.cs">
-      <DependentUpon>Capnhatkhachhang.cs</DependentUpon>
-    </Compile>
     <Compile Include="DAO\accountDAO.cs" />
     <Compile Include="DAO\DATAPROVIDER.cs" />
-    <Compile Include="fLogin.cs" />
+    <Compile Include="fLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="fLogin.designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Home_page.cs" />
+    <Compile Include="Home_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Home_page.Designer.cs">
       <DependentUpon>Home_page.cs</DependentUpon>
     </Compile>
-    <Compile Include="Khachhang.cs" />
+    <Compile Include="Khachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Khachhang.designer.cs">
       <DependentUpon>Khachhang.cs</DependentUpon>
     </Compile>
-    <Compile Include="PhieuSuaChua.cs" />
+    <Compile Include="PhieuSuaChua.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PhieuSuaChua.Designer.cs">
       <DependentUpon>PhieuSuaChua.cs</DependentUpon>
     </Compile>
@@ -74,13 +78,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="QL_SUACHUA.cs" />
+    <Compile Include="QL_SUACHUA.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="QL_SUACHUA.Designer.cs">
       <DependentUpon>QL_SUACHUA.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Capnhatkhachhang.resx">
-      <DependentUpon>Capnhatkhachhang.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
