@@ -65,6 +65,12 @@
     <Compile Include="Home_page.Designer.cs">
       <DependentUpon>Home_page.cs</DependentUpon>
     </Compile>
+    <Compile Include="Khachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Khachhang.designer.cs">
+      <DependentUpon>Khachhang.cs</DependentUpon>
+    </Compile>
     <Compile Include="PhieuSuaChua.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,12 +90,6 @@
     <Compile Include="QL_SUACHUA.Designer.cs">
       <DependentUpon>QL_SUACHUA.cs</DependentUpon>
     </Compile>
-    <Compile Include="Resources\Khachhang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Resources\Khachhang.Designer.cs">
-      <DependentUpon>Khachhang.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Capnhatkhachhang.resx">
       <DependentUpon>Capnhatkhachhang.cs</DependentUpon>
     </EmbeddedResource>
@@ -98,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Home_page.resx">
       <DependentUpon>Home_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Khachhang.resx">
+      <DependentUpon>Khachhang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PhieuSuaChua.resx">
       <DependentUpon>PhieuSuaChua.cs</DependentUpon>
@@ -109,9 +112,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QL_SUACHUA.resx">
       <DependentUpon>QL_SUACHUA.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Khachhang.resx">
-      <DependentUpon>Khachhang.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -128,6 +128,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DTO\" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="image\pen.png" />

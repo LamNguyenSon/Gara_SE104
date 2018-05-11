@@ -13,12 +13,23 @@ namespace Source.DAO
 		///////singleton
 		public static DATAPROVIDER instance;
 
+<<<<<<< HEAD
 		public DATAPROVIDER Instance
 		{
 			get { if (instance == null) instance = new DATAPROVIDER(); return instance; }
 			private set { instance = value; }
 		}
 		public DATAPROVIDER() { }
+=======
+        public DATAPROVIDER Instance
+        {
+            get { if (instance == null) instance = new DATAPROVIDER(); return instance; }
+            private set { instance = value; }
+        }
+        public DATAPROVIDER()
+        {
+        }
+>>>>>>> e2023e9337b946c937770b4692e2279112df10ab
 
 		private string connectionstr = @"Data Source=DESKTOP-6PU4NRQ;Initial Catalog=QL_GARA;Integrated Security=True";
 		public DataTable Executequery(string query, Object[] para = null)
