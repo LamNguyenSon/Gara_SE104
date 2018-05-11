@@ -82,7 +82,9 @@ namespace Source
 
 		private void nhanvien_Click(object sender, EventArgs e)
 		{
-
+			Nhanvien f = new Nhanvien();
+			this.Hide();
+			f.ShowDialog();
 		}
 
 		private void label2_Click(object sender, EventArgs e)
