@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
+            this.baocaothang = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,6 +42,7 @@
             this.Phutung = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -54,7 +55,8 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.baocaothang);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.label2);
@@ -67,18 +69,19 @@
             this.panel1.Controls.Add(this.Phutung);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(172, 411);
+            this.panel1.Size = new System.Drawing.Size(172, 445);
             this.panel1.TabIndex = 101;
             // 
-            // button5
+            // baocaothang
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(242)))), ((int)(((byte)(237)))));
-            this.button5.Location = new System.Drawing.Point(3, 363);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(162, 41);
-            this.button5.TabIndex = 13;
-            this.button5.Text = "About Us";
-            this.button5.UseVisualStyleBackColor = false;
+            this.baocaothang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(242)))), ((int)(((byte)(237)))));
+            this.baocaothang.Location = new System.Drawing.Point(3, 358);
+            this.baocaothang.Name = "baocaothang";
+            this.baocaothang.Size = new System.Drawing.Size(162, 41);
+            this.baocaothang.TabIndex = 13;
+            this.baocaothang.Text = "Báo Cáo Tháng";
+            this.baocaothang.UseVisualStyleBackColor = false;
+            this.baocaothang.Click += new System.EventHandler(this.baocaothang_Click);
             // 
             // button4
             // 
@@ -212,7 +215,7 @@
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Location = new System.Drawing.Point(190, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(466, 406);
+            this.panel2.Size = new System.Drawing.Size(466, 445);
             this.panel2.TabIndex = 102;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -225,13 +228,23 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(242)))), ((int)(((byte)(237)))));
+            this.button6.Location = new System.Drawing.Point(3, 397);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(162, 41);
+            this.button6.TabIndex = 103;
+            this.button6.Text = "About Us";
+            this.button6.UseVisualStyleBackColor = false;
+            // 
             // Home_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(668, 435);
+            this.ClientSize = new System.Drawing.Size(668, 503);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
@@ -263,9 +276,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button baocaothang;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button6;
     }
 }
 

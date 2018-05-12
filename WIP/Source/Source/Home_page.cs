@@ -87,7 +87,7 @@ namespace Source
 
 		private void label2_Click(object sender, EventArgs e)
 		{
-
+            
 		}
 
 		private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -117,6 +117,14 @@ namespace Source
         {
             QuanLyTaiKhoan ql = new QuanLyTaiKhoan();
             ql.Show();
+        }
+
+        private void baocaothang_Click(object sender, EventArgs e)
+        {
+            BaoCaoThang f = new BaoCaoThang();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
         }
     }
 	}
