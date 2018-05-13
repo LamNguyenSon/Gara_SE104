@@ -72,7 +72,7 @@ namespace Source.Resources
 			if(txtMaKH.Text!=""&&txtDiaChi.Text!=""&&txtHoTen.Text!="")
 			{
 				DATAPROVIDER kn = new DATAPROVIDER();
-				int kq = kn.Executenonquery("insert into KHACHHANG(MAKH,HOTEN,CMND,NGAYSINH,GIOITINH,DIACHI,SDT,BIENSO,LOAIXE) values('" + txtMaKH.Text + "','N" + txtHoTen.Text + "','N" + txtCMND.Text + "','N" + dtNgaySinh.Text + "','N" + coboGioiTinh.Text + "','N" + txtDiaChi.Text + "','N" + txtBienSo.Text + "','N" + txtLoaiXe.Text + "')");
+				int kq = kn.Executenonquery("insert into KHACHHANG(MAKH,HOTEN,CMND,NGAYSINH,GIOITINH,DIACHI,SDT,BIENSO,LOAIXE) values('" + txtMaKH.Text + "','N" + txtHoTen.Text + "','N" + txtCMND.Text + "','N" + dtNgaySinh.Text + "','N" + coboGioiTinh.Text + "','N" + txtDiaChi.Text + "','N" + txtSDT.Text + "','N" + txtBienSo.Text + "','N" + txtLoaiXe.Text + "')");
 				if (kq > 0)
 				{
 					MessageBox.Show("Thêm thành công");
@@ -113,7 +113,32 @@ namespace Source.Resources
 
 		private void cmdSua_Click(object sender, EventArgs e)
 		{
-
+			if (txtMaKH.Text == "")
+			{
+				errorProvider1.SetError(txtMaKH, "Bạn chưa nhập tên");
+			}
+			if (txtDiaChi.Text == "")
+			{
+				errorProvider1.SetError(txtDiaChi, "Bạn chưa nhập DiaChi");
+			}
+			if (txtHoTen.Text == "")
+			{
+				errorProvider1.SetError(txtHoTen, "Bạn chưa nhập CMND");
+			}
+			if (txtMaKH.Text != "" && txtDiaChi.Text != "" && txtHoTen.Text != "")
+			{
+				DATAPROVIDER kn = new DATAPROVIDER();
+				int kq = kn.Executenonquery("update KHACHHANG set HOTEN='"+txtHoTen.Text+"', CMND'"+txtCMND.Text+ "',CMND'" +dtNgaySinh.Text+ "', '" + coboGioiTinh.Text + "','" + txtDiaChi.Text+ "',CMND'" + txtSDT.Text + "',CMND'" + txtBienSo.Text + "',CMND'" + txtLoaiXe.Text + "' where MAKH='"+txtMaKH.Text+"'");
+				if (kq > 0)
+				{
+					MessageBox.Show("Sửa thành công");
+					LayBangKH();
+				}
+				else
+				{
+					MessageBox.Show("Sửa không thành công, vui lòng kiểm tra lại");
+				}
+			}
 		}
 
 		private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
@@ -180,6 +205,14 @@ namespace Source.Resources
 		{
 			LayBangKH();
 		}
+		
+		public void LoadListByKeyWord()
+		{
+			DATAPROVIDER kn = new DATAPROVIDER();
+			DataTable dt = new DataTable();
+			dt = kn.Executequery("select * from KHACHHANG where Name like'%"+txtTimKiem.Text+"%' ");
+			dataGridKhachHang.DataSource = dt;
+		}
 
 		private void dataGridKhachHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
 		{
@@ -195,8 +228,8 @@ namespace Source.Resources
 				txtSDT.Text = row.Cells[4].Value.ToString();
 				txtCMND.Text = row.Cells[5].Value.ToString();
 				txtDiaChi.Text = row.Cells[6].Value.ToString();
-				txtBienSo.Text = row.Cells[6].Value.ToString();
-				txtLoaiXe.Text = row.Cells[6].Value.ToString();
+				txtBienSo.Text = row.Cells[7].Value.ToString();
+				txtLoaiXe.Text = row.Cells[8].Value.ToString();
 			}
 			catch
 			{
@@ -228,6 +261,21 @@ namespace Source.Resources
 			{
 
 			}
+		}
+
+		private void cmdTimKiem_Click(object sender, EventArgs e)
+		{
+			LoadListByKeyWord();
+		}
+
+		private void cmdQuayLai_Click(object sender, EventArgs e)
+		{
+			LayBangKH();
+		}
+
+		private void txtTimKim_TextChanged(object sender, EventArgs e)
+		{
+			LoadListByKeyWord();
 		}
 	}
 }
