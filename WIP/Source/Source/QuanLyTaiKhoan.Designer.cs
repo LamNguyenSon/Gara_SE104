@@ -53,7 +53,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(776, 444);
+            this.panel1.Size = new System.Drawing.Size(511, 283);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -126,7 +126,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(194, 50);
+            this.label1.Location = new System.Drawing.Point(149, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(285, 31);
             this.label1.TabIndex = 0;
@@ -137,7 +137,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 468);
+            this.ClientSize = new System.Drawing.Size(535, 305);
             this.Controls.Add(this.panel1);
             this.Name = "QuanLyTaiKhoan";
             this.Text = "QuanLyTaiKhoan";

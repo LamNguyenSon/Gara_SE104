@@ -72,7 +72,8 @@ namespace Source
 
 		private void button3_Click(object sender, EventArgs e)
 		{
-
+            Phutung pt = new Phutung();
+            pt.Show();
 		}
 
 		private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -82,7 +83,8 @@ namespace Source
 
 		private void nhanvien_Click(object sender, EventArgs e)
 		{
-
+            Nhanvien nv = new Nhanvien();
+            nv.Show();
 		}
 
 		private void label2_Click(object sender, EventArgs e)

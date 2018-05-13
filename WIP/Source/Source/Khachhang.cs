@@ -30,12 +30,6 @@ namespace Source.Resources
 
 		}
 
-		private void Nhanvien_Load(object sender, EventArgs e)
-		{
-			LayBangKH();
-
-		}
-
 		private void Khachhang_Click(object sender, EventArgs e)
 		{
 
@@ -63,6 +57,7 @@ namespace Source.Resources
 			if(dg == DialogResult.Yes)
 			{
 				this.Close();
+                
 			}
 		}
 
@@ -82,32 +77,33 @@ namespace Source.Resources
 			}
 			if(txtMaKH.Text!=""&&txtDiaChi.Text!=""&&txtHoTen.Text!="")
 			{
-				//DATAPROVIDER kn = new DATAPROVIDER();
-				//int kq=kn.Executenonquery("insert into KHACHHANG(MAKH,HOTEN,CMND,NGAYSINH,GIOITINH,DIACHI,SDT,BIENSO,LOAIXE) values('"+txtMaKH.Text+"','N"+txtHoTen.Text+ "','N" + txtCMND.Text + "','N" + dtNgaySinh.Text + "','N" + coboGioiTinh.Text + "','N" + txtDiaChi.Text + "','N" + txtBienSo.Text + "','N"+txtLoaiXe.Text+"')");
-    //            if (kq > 0)
-    //            {
-    //               MessageBox.Show("thêm thành công");
-    //            }
-    //            else
-    //            {
-    //                MessageBox.Show("thêm không thành công, vui lòng kiểm tra lại");
-    //            }
-            }
+				DATAPROVIDER kn = new DATAPROVIDER();
+				int kq = kn.Executenonquery("insert into KHACHHANG(MAKH,HOTEN,CMND,NGAYSINH,GIOITINH,DIACHI,SDT,BIENSO,LOAIXE) values('" + txtMaKH.Text + "','N" + txtHoTen.Text + "','N" + txtCMND.Text + "','N" + dtNgaySinh.Text + "','N" + coboGioiTinh.Text + "','N" + txtDiaChi.Text + "','N" + txtBienSo.Text + "','N" + txtLoaiXe.Text + "')");
+				if (kq > 0)
+				{
+					MessageBox.Show("thêm thành công");
+				}
+				else
+				{
+					MessageBox.Show("thêm không thành công, vui lòng kiểm tra lại");
+				}
+			}
 		}
 
 		private void txtHoTen_TextChanged(object sender, EventArgs e)
 		{
-			errorProvider1.SetError(txtMaKH, "");
+			errorProvider1.SetError(txtHoTen, "");
 		}
 
 		private void txtMaKH_TextChanged(object sender, EventArgs e)
 		{
-			errorProvider1.SetError(txtDiaChi, "");
+			errorProvider1.SetError(txtMaKH, "");
+			
 		}
 
 		private void txtCMND_TextChanged(object sender, EventArgs e)
 		{
-			errorProvider1.SetError(txtHoTen, "");
+			errorProvider1.SetError(txtCMND, "");
 		}
 
 		private void comboGioiTinh_SelectedIndexChanged(object sender, EventArgs e)
@@ -126,6 +122,46 @@ namespace Source.Resources
 		}
 
 		private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void cmdXoa_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void groupBox2_Enter(object sender, EventArgs e)
+		{
+
+		}
+
+		private void groupBox1_Enter_1(object sender, EventArgs e)
+		{
+
+		}
+
+		private void txtSDT_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void txtBienSo_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void txtLoaiXe_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void KachHang_Load(object sender, EventArgs e)
+		{
+			LayBangKH();
+		}
+
+		private void dataGridKhachHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
 		{
 
 		}

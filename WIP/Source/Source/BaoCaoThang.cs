@@ -23,7 +23,7 @@ namespace Source
             string query = "SELECT PHUTUNG.MAPT AS N'Mã Phụ Tùng' ,TENPT AS N'Tên Phụ Tùng',SUM(SLPT_SUDUNG) as N'Số Lượng Phụ Tùng Sử Dụng Trong Tháng',sum(CHIPHI) AS N'Chi Phí' FROM dbo.PHUTUNG JOIN dbo.THONGTINSUACHUA ON THONGTINSUACHUA.MAPT = PHUTUNG.MAPT GROUP BY PHUTUNG.MAPT,TENPT";
             DATAPROVIDER provider = new DATAPROVIDER();
             dataGridView1.DataSource = provider.Executequery(query);
-            query = "SELECT SUM(TIENTHU) as N'DOANHTHU' FROM dbo.PHIEUTHUTIEN";
+            query = "SELECT SUM(TIENTHU) as N'DOANHTHU' FROM dbo.PHIEUTHUTIEN ";
             ///////////////////////////
             DataTable tb = new DataTable();
             tb = provider.Executequery(query);
