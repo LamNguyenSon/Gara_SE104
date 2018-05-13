@@ -40,11 +40,6 @@ namespace Source.Resources
 
 		}
 
-		private void groupBox1_Enter(object sender, EventArgs e)
-		{
-
-		}
-
 		private void label6_Click(object sender, EventArgs e)
 		{
 
@@ -68,7 +63,7 @@ namespace Source.Resources
 			}
 			if (txtDiaChi.Text == "")
 			{
-				errorProvider1.SetError(txtDiaChi, "Bạn chưa nhập MaKH");
+				errorProvider1.SetError(txtDiaChi, "Bạn chưa nhập DiaChi");
 			}
 			if (txtHoTen.Text == "")
 			{
@@ -80,11 +75,12 @@ namespace Source.Resources
 				int kq = kn.Executenonquery("insert into KHACHHANG(MAKH,HOTEN,CMND,NGAYSINH,GIOITINH,DIACHI,SDT,BIENSO,LOAIXE) values('" + txtMaKH.Text + "','N" + txtHoTen.Text + "','N" + txtCMND.Text + "','N" + dtNgaySinh.Text + "','N" + coboGioiTinh.Text + "','N" + txtDiaChi.Text + "','N" + txtBienSo.Text + "','N" + txtLoaiXe.Text + "')");
 				if (kq > 0)
 				{
-					MessageBox.Show("thêm thành công");
+					MessageBox.Show("Thêm thành công");
+					LayBangKH();
 				}
 				else
 				{
-					MessageBox.Show("thêm không thành công, vui lòng kiểm tra lại");
+					MessageBox.Show("Thêm không thành công, vui lòng kiểm tra lại");
 				}
 			}
 		}
@@ -127,7 +123,32 @@ namespace Source.Resources
 
 		private void cmdXoa_Click(object sender, EventArgs e)
 		{
-
+			if (txtMaKH.Text == "")
+			{
+				errorProvider1.SetError(txtMaKH, "Bạn chưa nhập tên");
+			}
+			if (txtDiaChi.Text == "")
+			{
+				errorProvider1.SetError(txtDiaChi, "Bạn chưa nhập DiaChi");
+			}
+			if (txtHoTen.Text == "")
+			{
+				errorProvider1.SetError(txtHoTen, "Bạn chưa nhập CMND");
+			}
+			if (txtMaKH.Text != "" && txtDiaChi.Text != "" && txtHoTen.Text != "")
+			{
+				DATAPROVIDER kn = new DATAPROVIDER();
+				int kq = kn.Executenonquery("delete from KHACHHANG where MaKH='"+txtMaKH.Text+"'");
+				if (kq > 0)
+				{
+					MessageBox.Show("Xóa thành công");
+					LayBangKH();
+				}
+				else
+				{
+					MessageBox.Show("Xóa không thành công, vui lòng kiểm tra lại");
+				}
+			}
 		}
 
 		private void groupBox2_Enter(object sender, EventArgs e)
@@ -162,7 +183,51 @@ namespace Source.Resources
 
 		private void dataGridKhachHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
 		{
+			try
+			{
+				DataGridViewRow row = new DataGridViewRow();
 
+				row = dataGridKhachHang.Rows[e.RowIndex];
+				txtMaKH.Text = row.Cells[0].Value.ToString();
+				txtHoTen.Text = row.Cells[1].Value.ToString();
+				coboGioiTinh.Text = row.Cells[2].Value.ToString();
+				dtNgaySinh.Text = row.Cells[3].Value.ToString();
+				txtSDT.Text = row.Cells[4].Value.ToString();
+				txtCMND.Text = row.Cells[5].Value.ToString();
+				txtDiaChi.Text = row.Cells[6].Value.ToString();
+				txtBienSo.Text = row.Cells[6].Value.ToString();
+				txtLoaiXe.Text = row.Cells[6].Value.ToString();
+			}
+			catch
+			{
+
+			}
+		
+
+		}
+
+		private void dataGridKhachHang_CellClick(object sender, DataGridViewCellEventArgs e)
+		{
+
+			try
+			{
+				DataGridViewRow row = new DataGridViewRow();
+
+				row = dataGridKhachHang.Rows[e.RowIndex];
+				txtMaKH.Text = row.Cells[0].Value.ToString();
+				txtHoTen.Text = row.Cells[1].Value.ToString();
+				coboGioiTinh.Text = row.Cells[2].Value.ToString();
+				dtNgaySinh.Text = row.Cells[3].Value.ToString();
+				txtSDT.Text = row.Cells[4].Value.ToString();
+				txtCMND.Text = row.Cells[5].Value.ToString();
+				txtDiaChi.Text = row.Cells[6].Value.ToString();
+				txtBienSo.Text = row.Cells[6].Value.ToString();
+				txtLoaiXe.Text = row.Cells[6].Value.ToString();
+			}
+			catch
+			{
+
+			}
 		}
 	}
 }

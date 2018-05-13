@@ -221,7 +221,7 @@
 			// cmdThem
 			// 
 			this.cmdThem.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.cmdThem.Location = new System.Drawing.Point(111, 215);
+			this.cmdThem.Location = new System.Drawing.Point(112, 215);
 			this.cmdThem.Name = "cmdThem";
 			this.cmdThem.Size = new System.Drawing.Size(86, 45);
 			this.cmdThem.TabIndex = 15;
@@ -256,7 +256,6 @@
 			this.dtNgaySinh.Name = "dtNgaySinh";
 			this.dtNgaySinh.Size = new System.Drawing.Size(134, 29);
 			this.dtNgaySinh.TabIndex = 7;
-			this.dtNgaySinh.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
 			// 
 			// label3
 			// 
@@ -343,6 +342,7 @@
 			this.dataGridKhachHang.Name = "dataGridKhachHang";
 			this.dataGridKhachHang.Size = new System.Drawing.Size(729, 145);
 			this.dataGridKhachHang.TabIndex = 0;
+			this.dataGridKhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridKhachHang_CellClick);
 			this.dataGridKhachHang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridKhachHang_CellContentClick);
 			// 
 			// Khachhang
