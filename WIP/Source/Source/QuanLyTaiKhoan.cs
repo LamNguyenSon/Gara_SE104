@@ -84,6 +84,7 @@ namespace Source
         private void button1_Click(object sender, EventArgs e)
         {
             updatedata();
+            MessageBox.Show("Update thành công");
         }
 
         private void textBoxngaytao_TextChanged(object sender, EventArgs e)

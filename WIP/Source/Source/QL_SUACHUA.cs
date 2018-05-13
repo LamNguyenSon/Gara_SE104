@@ -19,6 +19,7 @@ namespace Source
             InitializeComponent();
             loadthongtinkhintocombobox();        
             loadloaiphutungcombobox();
+            
         }
         void spilit_space(ref string str)
         {
@@ -102,6 +103,9 @@ namespace Source
 
             }
             loadthongtinMapsccombobox();
+            addphieusuachua.Enabled = true;
+         
+            
         }
 
         private void LOAISC_SelectedIndexChanged(object sender, EventArgs e)
@@ -119,9 +123,9 @@ namespace Source
 
         }
         //kiểm tra sự tồn tại của  khóa chính trong  bảng thong tin sua chữa
-        void loadthongtinsuachua(string mapt,string mapsc)
+        void loadthongtinsuachua(string mapsc)
         {
-            string query = "SELECT *FROM THONGTINSUACHUA WHERE MAPT='" + mapt + "' AND MAPSC= '" + mapsc + "'";
+            string query = "SELECT *FROM THONGTINSUACHUA WHERE MAPSC= '" + mapsc + "'";
             DATAPROVIDER provider = new DATAPROVIDER();
             dataGridView1.DataSource = provider.Executequery(query);
         }
@@ -163,8 +167,19 @@ namespace Source
                 query = "INSERT INTO dbo.THONGTINSUACHUA ( MAPT , MAPSC ,LOAISUACHUA ,MOTA ,SLPT_SUDUNG ,CHIPHI)VALUES  ( '" + mapt + "','" + maphieusc + "', " + loai + " ,N'" + MOTA.Text.ToString() + "' ," + slptsd.Text.ToString() + "," + CHIPHI.Text.ToString() + ")";
                 tb = new DataTable();
                 tb = provider.Executequery(query);
-                loadthongtinsuachua(mapt,maphieusc);
+                loadthongtinsuachua(maphieusc);
                 
+            }
+            ///SHOW THÀNH TIỀN
+            query = "SELECT SUM (CHIPHI) AS 'CHIPHI' FROM  dbo.THONGTINSUACHUA WHERE MAPSC='" + maphieusc + "'";
+            provider = new DATAPROVIDER();
+            tb = new DataTable();
+            tb = provider.Executequery(query);
+            foreach (DataRow row in tb.Rows)
+            {
+                THANHTIEN.Text = row["CHIPHI"].ToString();
+                THANHTIEN.Show();
+
             }
 
         }
@@ -172,6 +187,36 @@ namespace Source
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PhieuSuaChua psc = new PhieuSuaChua();
+            psc.Show();
+        }
+
+        private void MAPSC_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //load thông tin phiếu sửa chữa
+            String idpsc = MAPSC.Text.ToString();
+            spilit_space(ref idpsc);
+            loadthongtinsuachua(idpsc);
+            /////load thông tin chi phí thu
+            string query = "SELECT SUM (CHIPHI) AS 'CHIPHI' FROM  dbo.THONGTINSUACHUA WHERE MAPSC='" + idpsc + "'";
+            DATAPROVIDER provider = new DATAPROVIDER();
+            DataTable tb = new DataTable();
+            tb = provider.Executequery(query);
+            foreach (DataRow row in tb.Rows)
+            {
+                THANHTIEN.Text = row["CHIPHI"].ToString();
+                THANHTIEN.Show();
+
+            }
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+           
         }
     }
 }

@@ -73,6 +73,16 @@ namespace Source.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _764159_car_wallpaper {
+            get {
+                object obj = ResourceManager.GetObject("764159-car-wallpaper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Actions_document_edit_icon {
             get {
                 object obj = ResourceManager.GetObject("Actions-document-edit-icon", resourceCulture);
@@ -106,6 +116,16 @@ namespace Source.Properties {
         internal static System.Drawing.Bitmap atomix_user31 {
             get {
                 object obj = ResourceManager.GetObject("atomix_user31", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap black_and_blue_lamborghini_10_cool_wallpaper {
+            get {
+                object obj = ResourceManager.GetObject("black-and-blue-lamborghini-10-cool-wallpaper", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
