@@ -128,7 +128,7 @@ namespace Source.Resources
 			if (txtMaKH.Text != "" && txtDiaChi.Text != "" && txtHoTen.Text != "")
 			{
 				DATAPROVIDER kn = new DATAPROVIDER();
-				int kq = kn.Executenonquery("update KHACHHANG set HOTEN='"+txtHoTen.Text+"', CMND'"+txtCMND.Text+ "',CMND'" +dtNgaySinh.Text+ "', '" + coboGioiTinh.Text + "','" + txtDiaChi.Text+ "',CMND'" + txtSDT.Text + "',CMND'" + txtBienSo.Text + "',CMND'" + txtLoaiXe.Text + "' where MAKH='"+txtMaKH.Text+"'");
+				int kq = kn.Executenonquery("update KHACHHANG set HOTEN='"+txtHoTen.Text+"', CMND='"+txtCMND.Text+ "',NGAYSINH='" +dtNgaySinh.Text+ "', GIOITINH='" + coboGioiTinh.Text + "',DIACHI='" + txtDiaChi.Text+ "',SDT='" + txtSDT.Text + "',BIENSO='" + txtBienSo.Text + "',LOAIXE='" + txtLoaiXe.Text + "' where MAKH='"+txtMaKH.Text+"'");
 				if (kq > 0)
 				{
 					MessageBox.Show("Sửa thành công");
@@ -273,7 +273,7 @@ namespace Source.Resources
 			LayBangKH();
 		}
 
-		private void txtTimKim_TextChanged(object sender, EventArgs e)
+		private void txtTimKiem_TextChanged(object sender, EventArgs e)
 		{
 			LoadListByKeyWord();
 		}

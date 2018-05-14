@@ -29,7 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.dataGridKhachHang = new System.Windows.Forms.DataGridView();
+			this.dataGridPhuTung = new System.Windows.Forms.DataGridView();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.cmdXoa = new System.Windows.Forms.Button();
 			this.cmdSua = new System.Windows.Forms.Button();
@@ -47,29 +47,32 @@
 			this.txtHoTen = new System.Windows.Forms.TextBox();
 			this.txtCMND = new System.Windows.Forms.TextBox();
 			this.txtMaKH = new System.Windows.Forms.TextBox();
+			this.txtTimKiem = new System.Windows.Forms.TextBox();
+			this.cmdTimKiem = new System.Windows.Forms.Button();
+			this.cmdQuayLai = new System.Windows.Forms.Button();
 			this.groupBox2.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.dataGridKhachHang)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridPhuTung)).BeginInit();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// groupBox2
 			// 
-			this.groupBox2.Controls.Add(this.dataGridKhachHang);
+			this.groupBox2.Controls.Add(this.dataGridPhuTung);
 			this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.groupBox2.Location = new System.Drawing.Point(12, 307);
+			this.groupBox2.Location = new System.Drawing.Point(12, 354);
 			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Size = new System.Drawing.Size(747, 187);
+			this.groupBox2.Size = new System.Drawing.Size(747, 140);
 			this.groupBox2.TabIndex = 29;
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "DANH SÁCH PHỤ TÙNG";
 			// 
-			// dataGridKhachHang
+			// dataGridPhuTung
 			// 
-			this.dataGridKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridKhachHang.Location = new System.Drawing.Point(6, 28);
-			this.dataGridKhachHang.Name = "dataGridKhachHang";
-			this.dataGridKhachHang.Size = new System.Drawing.Size(729, 145);
-			this.dataGridKhachHang.TabIndex = 0;
+			this.dataGridPhuTung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dataGridPhuTung.Location = new System.Drawing.Point(6, 28);
+			this.dataGridPhuTung.Name = "dataGridPhuTung";
+			this.dataGridPhuTung.Size = new System.Drawing.Size(729, 145);
+			this.dataGridPhuTung.TabIndex = 0;
 			// 
 			// groupBox1
 			// 
@@ -106,6 +109,7 @@
 			this.cmdXoa.TabIndex = 28;
 			this.cmdXoa.Text = "Xóa";
 			this.cmdXoa.UseVisualStyleBackColor = true;
+			this.cmdXoa.Click += new System.EventHandler(this.cmdXoa_Click);
 			// 
 			// cmdSua
 			// 
@@ -116,6 +120,7 @@
 			this.cmdSua.TabIndex = 27;
 			this.cmdSua.Text = "Sửa";
 			this.cmdSua.UseVisualStyleBackColor = true;
+			this.cmdSua.Click += new System.EventHandler(this.cmdSua_Click);
 			// 
 			// txtSDT
 			// 
@@ -160,6 +165,7 @@
 			this.cmdThoat.TabIndex = 16;
 			this.cmdThoat.Text = "Thoát";
 			this.cmdThoat.UseVisualStyleBackColor = true;
+			this.cmdThoat.Click += new System.EventHandler(this.cmdThoat_Click);
 			// 
 			// cmdThem
 			// 
@@ -170,6 +176,7 @@
 			this.cmdThem.TabIndex = 15;
 			this.cmdThem.Text = "Thêm";
 			this.cmdThem.UseVisualStyleBackColor = true;
+			this.cmdThem.Click += new System.EventHandler(this.cmdThem_Click);
 			// 
 			// label4
 			// 
@@ -240,27 +247,60 @@
 			this.txtMaKH.Size = new System.Drawing.Size(236, 29);
 			this.txtMaKH.TabIndex = 0;
 			// 
+			// txtTimKiem
+			// 
+			this.txtTimKiem.Location = new System.Drawing.Point(12, 316);
+			this.txtTimKiem.Name = "txtTimKiem";
+			this.txtTimKiem.Size = new System.Drawing.Size(248, 20);
+			this.txtTimKiem.TabIndex = 30;
+			// 
+			// cmdTimKiem
+			// 
+			this.cmdTimKiem.Location = new System.Drawing.Point(272, 314);
+			this.cmdTimKiem.Name = "cmdTimKiem";
+			this.cmdTimKiem.Size = new System.Drawing.Size(86, 23);
+			this.cmdTimKiem.TabIndex = 31;
+			this.cmdTimKiem.Text = "Tìm kiếm";
+			this.cmdTimKiem.UseVisualStyleBackColor = true;
+			this.cmdTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
+			this.cmdTimKiem.Click += new System.EventHandler(this.cmdTimKiem_Click);
+			// 
+			// cmdQuayLai
+			// 
+			this.cmdQuayLai.Location = new System.Drawing.Point(374, 313);
+			this.cmdQuayLai.Name = "cmdQuayLai";
+			this.cmdQuayLai.Size = new System.Drawing.Size(127, 23);
+			this.cmdQuayLai.TabIndex = 32;
+			this.cmdQuayLai.Text = "Quay lại danh sách";
+			this.cmdQuayLai.UseVisualStyleBackColor = true;
+			this.cmdQuayLai.Click += new System.EventHandler(this.cmdQuayLai_Click);
+			// 
 			// Phutung
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(792, 523);
+			this.Controls.Add(this.cmdQuayLai);
+			this.Controls.Add(this.cmdTimKiem);
+			this.Controls.Add(this.txtTimKiem);
 			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.groupBox2);
 			this.Name = "Phutung";
 			this.Text = "Phutung";
+			this.Load += new System.EventHandler(this.Phutung_Load);
 			this.groupBox2.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize)(this.dataGridKhachHang)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridPhuTung)).EndInit();
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 
 		#endregion
 
 		private System.Windows.Forms.GroupBox groupBox2;
-		private System.Windows.Forms.DataGridView dataGridKhachHang;
+		private System.Windows.Forms.DataGridView dataGridPhuTung;
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.Button cmdXoa;
 		private System.Windows.Forms.Button cmdSua;
@@ -278,5 +318,8 @@
 		private System.Windows.Forms.TextBox txtHoTen;
 		private System.Windows.Forms.TextBox txtCMND;
 		private System.Windows.Forms.TextBox txtMaKH;
+		private System.Windows.Forms.TextBox txtTimKiem;
+		private System.Windows.Forms.Button cmdTimKiem;
+		private System.Windows.Forms.Button cmdQuayLai;
 	}
 }
