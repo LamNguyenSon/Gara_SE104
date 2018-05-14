@@ -28,16 +28,92 @@ namespace Source
 		private void cmdThem_Click(object sender, EventArgs e)
 		{
 
+			if (txtMaPT.Text == "")
+			{
+				errorProvider1.SetError(txtMaPT, "Bạn chưa nhập MaPT");
+			}
+			if (txtMaBCT.Text == "")
+			{
+				errorProvider1.SetError(txtDonGia, "Bạn chưa nhập MaBCT ");
+			}
+			if (txtTenPhuTung.Text == "")
+			{
+				errorProvider1.SetError(txtMaBCT, "Bạn chưa nhập tên phụ tùng");
+			}
+			if (txtMaPT.Text != "" && txtDonGia.Text != "" && txtMaBCT.Text != "")
+			{
+				DATAPROVIDER kn = new DATAPROVIDER();
+				int kq = kn.Executenonquery("delete from PHUTUNG where MaPT='" + txtMaPT.Text + "'");
+				if (kq > 0)
+				{
+					MessageBox.Show("Sửa thành công");
+					LayBangPT();
+				}
+				else
+				{
+					MessageBox.Show("Sửa không thành công, vui lòng kiểm tra lại");
+				}
+			}
 		}
 
 		private void cmdXoa_Click(object sender, EventArgs e)
 		{
-
+			if (txtMaPT.Text == "")
+			{
+				errorProvider1.SetError(txtMaPT, "Bạn chưa nhập MaPT");
+			}
+			if (txtMaBCT.Text == "")
+			{
+				errorProvider1.SetError(txtDonGia, "Bạn chưa nhập MaBCT ");
+			}
+			if (txtTenPhuTung.Text == "")
+			{
+				errorProvider1.SetError(txtMaBCT, "Bạn chưa nhập tên phụ tùng");
+			}
+			if (txtMaPT.Text != "" && txtDonGia.Text != "" && txtMaBCT.Text != "")
+			{
+				DATAPROVIDER kn = new DATAPROVIDER();
+				int kq = kn.Executenonquery("delete from PHUTUNG where MaPT='" + txtMaPT.Text + "'");
+				if (kq > 0)
+				{
+					MessageBox.Show("Sửa thành công");
+					LayBangPT();
+				}
+				else
+				{
+					MessageBox.Show("Sửa không thành công, vui lòng kiểm tra lại");
+				}
+			}
 		}
 
 		private void cmdSua_Click(object sender, EventArgs e)
 		{
-
+			if (txtMaPT.Text == "")
+			{
+				errorProvider1.SetError(txtMaPT, "Bạn chưa nhập MaPT");
+			}
+			if (txtMaBCT.Text == "")
+			{
+				errorProvider1.SetError(txtDonGia, "Bạn chưa nhập MaBCT ");
+			}
+			if (txtTenPhuTung.Text == "")
+			{
+				errorProvider1.SetError(txtMaBCT, "Bạn chưa nhập tên phụ tùng");
+			}
+			if (txtMaPT.Text != "" && txtDonGia.Text != "" && txtMaBCT.Text != "")
+			{
+				DATAPROVIDER kn = new DATAPROVIDER();
+				int kq = kn.Executenonquery("update PHUTUNG set TENPHUTUNG='" + txtTenPhuTung.Text + "', DONGIA='" + txtDonGia.Text + "',SOLUONG='" + txtSoLuong.Text + "',NGAYNHAP='" + dtNgayNhap.Text + "'");
+				if (kq > 0)
+				{
+					MessageBox.Show("Sửa thành công");
+					LayBangPT();
+				}
+				else
+				{
+					MessageBox.Show("Sửa không thành công, vui lòng kiểm tra lại");
+				}
+			}
 		}
 
 		private void cmdThoat_Click(object sender, EventArgs e)
