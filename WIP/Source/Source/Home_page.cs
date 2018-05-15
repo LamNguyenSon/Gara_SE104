@@ -72,7 +72,9 @@ namespace Source
 
 		private void button3_Click(object sender, EventArgs e)
 		{
-
+			Phutung f = new Phutung();
+			this.Hide();
+			f.ShowDialog();
 		}
 
 		private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
