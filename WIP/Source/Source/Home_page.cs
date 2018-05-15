@@ -13,12 +13,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 namespace Source
 {
-    /// <summary>
-    /// ////////////////
-    /// </summary>
-    public partial class Home_page : Form
-    {
+	/// <summary>
+	/// ////////////////
+	/// </summary>
+	public partial class Home_page : Form
+	{
 
+<<<<<<< HEAD
         public Home_page()
         {
             InitializeComponent();
@@ -45,13 +46,24 @@ namespace Source
         //}
         private void Form1_Load(object sender, EventArgs e)
         {
+=======
+		public Home_page()
+		{
+			InitializeComponent();
+			//loadaccountlist();
+		}
+>>>>>>> 4fe023875b0b49133466e341884611d9ec8caddd
 
-        }
+	
+		private void Form1_Load(object sender, EventArgs e)
+		{
 
-        private void button1_Click(object sender, EventArgs e)
-        {
+		}
 
-        }
+		private void button1_Click(object sender, EventArgs e)
+		{
+
+		}
 
 		private void button2_Click(object sender, EventArgs e)
 		{
@@ -61,8 +73,7 @@ namespace Source
 		private void khachhang_Click(object sender, EventArgs e)
 		{
 			Khachhang f = new Khachhang();
-			this.Hide();
-			f.ShowDialog();
+            f.Show();
 		}
 
 		private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -72,7 +83,8 @@ namespace Source
 
 		private void button3_Click(object sender, EventArgs e)
 		{
-
+            Phutung pt = new Phutung();
+            pt.Show();
 		}
 
 		private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -82,30 +94,51 @@ namespace Source
 
 		private void nhanvien_Click(object sender, EventArgs e)
 		{
+            Nhanvien nv = new Nhanvien();
+            nv.Show();
+		}
+
+		private void label2_Click(object sender, EventArgs e)
+		{
+            
+		}
+
+		private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
 
 		}
 
-        private void label2_Click(object sender, EventArgs e)
+		private void button3_Click_1(object sender, EventArgs e)
+		{
+			this.Close();
+		}
+
+		private void button2_Click_1(object sender, EventArgs e)
+		{
+			QL_SUACHUA f = new QL_SUACHUA();
+			this.Hide();
+			f.ShowDialog();
+			this.Show();
+		}
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-
+            QuanLyTaiKhoan ql = new QuanLyTaiKhoan();
+            ql.Show();
         }
 
-        private void button3_Click_1(object sender, EventArgs e)
+        private void baocaothang_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            QL_SUACHUA f = new QL_SUACHUA();
+            BaoCaoThang f = new BaoCaoThang();
             this.Hide();
             f.ShowDialog();
             this.Show();
         }
     }
-}
+	}
+

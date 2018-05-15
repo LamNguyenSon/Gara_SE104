@@ -14,11 +14,16 @@ namespace Source.DAO
 		public static DATAPROVIDER instance;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4fe023875b0b49133466e341884611d9ec8caddd
 		public DATAPROVIDER Instance
 		{
 			get { if (instance == null) instance = new DATAPROVIDER(); return instance; }
 			private set { instance = value; }
 		}
+<<<<<<< HEAD
 		public DATAPROVIDER() { }
 =======
         public DATAPROVIDER Instance
@@ -26,11 +31,20 @@ namespace Source.DAO
             get { if (instance == null) instance = new DATAPROVIDER(); return instance; }
             private set { instance = value; }
         }
+=======
+
+        //public DATAPROVIDER Instance
+        //{
+        //    get { if (instance == null) instance = new DATAPROVIDER(); return instance; }
+        //    private set { instance = value; }
+        //}
+>>>>>>> 4fe023875b0b49133466e341884611d9ec8caddd
         public DATAPROVIDER()
         {
         }
 >>>>>>> e2023e9337b946c937770b4692e2279112df10ab
 
+<<<<<<< HEAD
 		private string connectionstr = @"Data Source=DESKTOP-6PU4NRQ;Initial Catalog=QL_GARA;Integrated Security=True";
 		public DataTable Executequery(string query, Object[] para = null)
 		{
@@ -67,6 +81,51 @@ namespace Source.DAO
 			connection.Open();
 			SqlCommand command = new SqlCommand(query, connection);
 
+=======
+
+		private string connectionstr = @"Data Source=DESKTOP-6PU4NRQ;Initial Catalog=QL_GARA;Integrated Security=True";
+		public DataTable Executequery(string query, Object[] para = null)
+		{
+			SqlConnection connection = new SqlConnection(connectionstr);
+			connection.Open();
+			SqlCommand command = new SqlCommand(query, connection);
+
+>>>>>>> 4fe023875b0b49133466e341884611d9ec8caddd
+			if (para != null)
+			{
+				string[] listpara = query.Split(' ');
+				int i = 0;
+				foreach (string item in listpara)
+				{
+					if (item.Contains('@'))
+					{
+						command.Parameters.AddWithValue(item, para[i]);
+						i++;
+					}
+				}
+			}
+
+<<<<<<< HEAD
+			data = command.ExecuteNonQuery();
+=======
+			DataTable data = new DataTable();
+			SqlDataAdapter adapter = new SqlDataAdapter(command);
+			adapter.Fill(data);
+>>>>>>> 4fe023875b0b49133466e341884611d9ec8caddd
+			connection.Close();
+			return data;
+		}
+
+
+<<<<<<< HEAD
+=======
+		public int Executenonquery(string query, Object[] para = null)
+		{
+			int data = 0;
+			SqlConnection connection = new SqlConnection(connectionstr);
+			connection.Open();
+			SqlCommand command = new SqlCommand(query, connection);
+
 			if (para != null)
 			{
 				string[] listpara = query.Split(' ');
@@ -87,6 +146,7 @@ namespace Source.DAO
 		}
 
 
+>>>>>>> 4fe023875b0b49133466e341884611d9ec8caddd
 
 		public object Executescalarquery(string query, Object[] para = null)
 		{

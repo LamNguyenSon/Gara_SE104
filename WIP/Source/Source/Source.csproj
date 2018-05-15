@@ -45,11 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Capnhatkhachhang.cs">
+    <Compile Include="BaoCaoThang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Capnhatkhachhang.Designer.cs">
-      <DependentUpon>Capnhatkhachhang.cs</DependentUpon>
+    <Compile Include="BaoCaoThang.Designer.cs">
+      <DependentUpon>BaoCaoThang.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\accountDAO.cs" />
     <Compile Include="DAO\DATAPROVIDER.cs" />
@@ -71,11 +71,23 @@
     <Compile Include="Khachhang.designer.cs">
       <DependentUpon>Khachhang.cs</DependentUpon>
     </Compile>
+    <Compile Include="Nhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nhanvien.Designer.cs">
+      <DependentUpon>Nhanvien.cs</DependentUpon>
+    </Compile>
     <Compile Include="PhieuSuaChua.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PhieuSuaChua.Designer.cs">
       <DependentUpon>PhieuSuaChua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Phutung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Phutung.Designer.cs">
+      <DependentUpon>Phutung.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -90,8 +102,14 @@
     <Compile Include="QL_SUACHUA.Designer.cs">
       <DependentUpon>QL_SUACHUA.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Capnhatkhachhang.resx">
-      <DependentUpon>Capnhatkhachhang.cs</DependentUpon>
+    <Compile Include="QuanLyTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyTaiKhoan.Designer.cs">
+      <DependentUpon>QuanLyTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaoCaoThang.resx">
+      <DependentUpon>BaoCaoThang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
@@ -102,8 +120,14 @@
     <EmbeddedResource Include="Khachhang.resx">
       <DependentUpon>Khachhang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Nhanvien.resx">
+      <DependentUpon>Nhanvien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PhieuSuaChua.resx">
       <DependentUpon>PhieuSuaChua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Phutung.resx">
+      <DependentUpon>Phutung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -112,6 +136,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QL_SUACHUA.resx">
       <DependentUpon>QL_SUACHUA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyTaiKhoan.resx">
+      <DependentUpon>QuanLyTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -150,6 +177,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="image\App-login-manager-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\black-and-blue-lamborghini-10-cool-wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\764159-car-wallpaper.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
