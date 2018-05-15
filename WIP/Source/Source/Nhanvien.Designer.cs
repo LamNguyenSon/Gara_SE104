@@ -55,6 +55,9 @@
 			this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
 			this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
 			this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
+			this.txtTimKiem = new System.Windows.Forms.TextBox();
+			this.cmdTimKiem = new System.Windows.Forms.Button();
+			this.cmdQuayLai = new System.Windows.Forms.Button();
 			this.groupBox1.SuspendLayout();
 			this.groupBox3.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridNhanVien)).BeginInit();
@@ -129,6 +132,7 @@
 			this.cmdXoa.TabIndex = 28;
 			this.cmdXoa.Text = "Xóa";
 			this.cmdXoa.UseVisualStyleBackColor = true;
+			this.cmdXoa.Click += new System.EventHandler(this.cmdXoa_Click_1);
 			// 
 			// cmdSua
 			// 
@@ -139,6 +143,7 @@
 			this.cmdSua.TabIndex = 27;
 			this.cmdSua.Text = "Sửa";
 			this.cmdSua.UseVisualStyleBackColor = true;
+			this.cmdSua.Click += new System.EventHandler(this.cmdSua_Click_1);
 			// 
 			// txtSDT
 			// 
@@ -290,9 +295,9 @@
 			// 
 			this.groupBox3.Controls.Add(this.dataGridNhanVien);
 			this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.groupBox3.Location = new System.Drawing.Point(18, 298);
+			this.groupBox3.Location = new System.Drawing.Point(18, 327);
 			this.groupBox3.Name = "groupBox3";
-			this.groupBox3.Size = new System.Drawing.Size(747, 187);
+			this.groupBox3.Size = new System.Drawing.Size(747, 158);
 			this.groupBox3.TabIndex = 17;
 			this.groupBox3.TabStop = false;
 			this.groupBox3.Text = "DANH SÁCH NHÂN VIÊN";
@@ -318,11 +323,42 @@
 			// 
 			this.errorProvider3.ContainerControl = this;
 			// 
+			// txtTimKiem
+			// 
+			this.txtTimKiem.Location = new System.Drawing.Point(18, 301);
+			this.txtTimKiem.Name = "txtTimKiem";
+			this.txtTimKiem.Size = new System.Drawing.Size(248, 20);
+			this.txtTimKiem.TabIndex = 18;
+			this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
+			// 
+			// cmdTimKiem
+			// 
+			this.cmdTimKiem.Location = new System.Drawing.Point(279, 301);
+			this.cmdTimKiem.Name = "cmdTimKiem";
+			this.cmdTimKiem.Size = new System.Drawing.Size(86, 23);
+			this.cmdTimKiem.TabIndex = 19;
+			this.cmdTimKiem.Text = "Tìm kiếm";
+			this.cmdTimKiem.UseVisualStyleBackColor = true;
+			this.cmdTimKiem.Click += new System.EventHandler(this.cmdTimKiem_Click);
+			// 
+			// cmdQuayLai
+			// 
+			this.cmdQuayLai.Location = new System.Drawing.Point(382, 298);
+			this.cmdQuayLai.Name = "cmdQuayLai";
+			this.cmdQuayLai.Size = new System.Drawing.Size(127, 23);
+			this.cmdQuayLai.TabIndex = 20;
+			this.cmdQuayLai.Text = "Quay lại danh sách";
+			this.cmdQuayLai.UseVisualStyleBackColor = true;
+			this.cmdQuayLai.Click += new System.EventHandler(this.cmdQuayLai_Click);
+			// 
 			// Nhanvien
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(827, 524);
+			this.Controls.Add(this.cmdQuayLai);
+			this.Controls.Add(this.cmdTimKiem);
+			this.Controls.Add(this.txtTimKiem);
 			this.Controls.Add(this.groupBox3);
 			this.Controls.Add(this.groupBox1);
 			this.Name = "Nhanvien";
@@ -337,6 +373,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).EndInit();
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 
@@ -367,5 +404,8 @@
 		private System.Windows.Forms.ErrorProvider errorProvider1;
 		private System.Windows.Forms.ErrorProvider errorProvider2;
 		private System.Windows.Forms.ErrorProvider errorProvider3;
+		private System.Windows.Forms.TextBox txtTimKiem;
+		private System.Windows.Forms.Button cmdTimKiem;
+		private System.Windows.Forms.Button cmdQuayLai;
 	}
 }

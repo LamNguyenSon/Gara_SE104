@@ -53,6 +53,20 @@ namespace Source
 			{
 				errorProvider1.SetError(txtHoTen, "Bạn chưa nhập họ tên");
 			}
+			if (txtMaNV.Text != "" && txtDiaChi.Text != "" && txtHoTen.Text != "")
+			{
+				DATAPROVIDER kn = new DATAPROVIDER();
+				int kq = kn.Executenonquery("insert into NHANVIEN(MANV,MATK,HOTEN,CMND,NGAYSINH,GIOITINH,DIACHI,SDT) values('" + txtMaNV.Text + "','N" + txtMaTK.Text + "','N" + txtHoTen.Text + "','N" + txtCMND.Text + "','N" + dtNgaySinh.Text + "','N" + coboGioiTinh.Text + "','N" + txtDiaChi.Text + "','N" + txtSDT.Text + "')");
+				if (kq > 0)
+				{
+					MessageBox.Show("Thêm thành công");
+					LayBangNV();
+				}
+				else
+				{
+					MessageBox.Show("Thêm không thành công, vui lòng kiểm tra lại");
+				}
+			}
 		}
 
 		private void txtMaNV_TextChanged(object sender, EventArgs e)
@@ -128,6 +142,97 @@ namespace Source
 		private void NhanVien_Load(object sender, EventArgs e)
 		{
 			LayBangNV();
+		}
+
+		private void cmdQuayLai_Click(object sender, EventArgs e)
+		{
+			LayBangNV();
+		}
+		public void LoadListByKeyWord()
+		{
+			DATAPROVIDER kn = new DATAPROVIDER();
+			DataTable dt = new DataTable();
+			dt = kn.Executequery("select * from NHANVIEN where Name like'%" + txtTimKiem.Text + "%' ");
+			dataGridNhanVien.DataSource = dt;
+		}
+
+		private void txtTimKiem_TextChanged(object sender, EventArgs e)
+		{
+			LoadListByKeyWord();
+		}
+
+		private void cmdTimKiem_Click(object sender, EventArgs e)
+		{
+			LoadListByKeyWord();
+		}
+
+		private void cmdXoa_Click_1(object sender, EventArgs e)
+		{
+			if (txtMaNV.Text == "")
+			{
+				errorProvider1.SetError(txtMaNV, "Bạn chưa nhập MaNV");
+			}
+			if (txtMaTK.Text == "")
+			{
+				errorProvider1.SetError(txtMaTK, "Bạn chưa nhập tMaTK");
+			}
+			if (txtDiaChi.Text == "")
+			{
+				errorProvider1.SetError(txtCMND, "Bạn chưa nhập CMND");
+			}
+			if (txtHoTen.Text == "")
+			{
+				errorProvider1.SetError(txtHoTen, "Bạn chưa nhập họ tên ");
+			}
+			if (txtMaNV.Text != "" && txtDiaChi.Text != "" && txtHoTen.Text != "")
+			{
+				DATAPROVIDER kn = new DATAPROVIDER();
+				int kq = kn.Executenonquery("delete from NHANVIEN where MaNV='" + txtMaNV.Text + "'");
+				if (kq > 0)
+				{
+					MessageBox.Show("Xóa thành công");
+					LayBangNV();
+				}
+				else
+				{
+					MessageBox.Show("Xóa không thành công, vui lòng kiểm tra lại");
+				}
+			}
+		}
+
+		private void cmdSua_Click_1(object sender, EventArgs e)
+		{
+
+			if (txtMaNV.Text == "")
+			{
+				errorProvider1.SetError(txtMaNV, "Bạn chưa nhập MaNV");
+			}
+			if (txtMaTK.Text == "")
+			{
+				errorProvider1.SetError(txtMaTK, "Bạn chưa nhập tMaTK");
+			}
+			if (txtDiaChi.Text == "")
+			{
+				errorProvider1.SetError(txtCMND, "Bạn chưa nhập CMND");
+			}
+			if (txtHoTen.Text == "")
+			{
+				errorProvider1.SetError(txtHoTen, "Bạn chưa nhập họ tên ");
+			}
+			if (txtMaNV.Text != "" && txtDiaChi.Text != "" && txtHoTen.Text != "")
+			{
+				DATAPROVIDER kn = new DATAPROVIDER();
+				int kq = kn.Executenonquery("update NHANVIEN set HOTEN='" + txtHoTen.Text + "', CMND='" + txtCMND.Text + "',NGAYSINH='" + dtNgaySinh.Text + "',GIOITINH= '" + coboGioiTinh.Text + "',DIACHI='" + txtDiaChi.Text + "',SDT='" + txtSDT.Text + "' where MAKH='" + txtMaNV.Text + "'");
+				if (kq > 0)
+				{
+					MessageBox.Show("Xóa thành công");
+					LayBangNV();
+				}
+				else
+				{
+					MessageBox.Show("Xóa không thành công, vui lòng kiểm tra lại");
+				}
+			}
 		}
 	}
 }

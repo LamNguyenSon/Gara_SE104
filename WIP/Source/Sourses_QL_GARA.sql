@@ -245,3 +245,5 @@ PRINT N'NGÀY SINH CỦA NHÂN VIÊN PHẢI NHỎ HƠN NGÀY HIỆN TẠI'
 END
 
 END
+---------------
+
