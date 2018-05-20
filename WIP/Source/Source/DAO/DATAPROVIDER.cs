@@ -20,25 +20,16 @@ namespace Source.DAO
 			private set { instance = value; }
 		}
 
-		public DATAPROVIDER() { }
-
-        public DATAPROVIDER Instance
-        {
-            get { if (instance == null) instance = new DATAPROVIDER(); return instance; }
-            private set { instance = value; }
-        }
-
-
         //public DATAPROVIDER Instance
         //{
         //    get { if (instance == null) instance = new DATAPROVIDER(); return instance; }
         //    private set { instance = value; }
         //}
-
         public DATAPROVIDER()
         {
         }
 
+
 		private string connectionstr = @"Data Source=DESKTOP-6PU4NRQ;Initial Catalog=QL_GARA;Integrated Security=True";
 		public DataTable Executequery(string query, Object[] para = null)
 		{
@@ -74,48 +65,6 @@ namespace Source.DAO
 			SqlConnection connection = new SqlConnection(connectionstr);
 			connection.Open();
 			SqlCommand command = new SqlCommand(query, connection);
-		}
-
-		private string connectionstr = @"Data Source=DESKTOP-6PU4NRQ;Initial Catalog=QL_GARA;Integrated Security=True";
-		public DataTable Executequery(string query, Object[] para = null)
-		{
-			SqlConnection connection = new SqlConnection(connectionstr);
-			connection.Open();
-			SqlCommand command = new SqlCommand(query, connection);
-
-
-			if (para != null)
-			{
-				string[] listpara = query.Split(' ');
-				int i = 0;
-				foreach (string item in listpara)
-				{
-					if (item.Contains('@'))
-					{
-						command.Parameters.AddWithValue(item, para[i]);
-						i++;
-					}
-				}
-			}
-
-
-			data = command.ExecuteNonQuery();
-
-			DataTable data = new DataTable();
-			SqlDataAdapter adapter = new SqlDataAdapter(command);
-			adapter.Fill(data);
-			connection.Close();
-			return data;
-		}
-
-
-
-		public int Executenonquery(string query, Object[] para = null)
-		{
-			int data = 0;
-			SqlConnection connection = new SqlConnection(connectionstr);
-			connection.Open();
-			SqlCommand command = new SqlCommand(query, connection);
 
 			if (para != null)
 			{
@@ -135,7 +84,6 @@ namespace Source.DAO
 			connection.Close();
 			return data;
 		}
-
 
 
 

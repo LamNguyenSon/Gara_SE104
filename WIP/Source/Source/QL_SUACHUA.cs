@@ -31,14 +31,6 @@ namespace Source
         }
         public void loadloaiphutungcombobox()
         {
-<<<<<<< HEAD
-            //EXEC GETACCOUNTBYUSERNAME @USERNAME
-           // string query = "SELECT *FROM dbo.THONGTINSUACHUA ";
-            //string query = "INSERT INTO TAIKHOAN VALUES('TK06','NV6','123456','07/02/1788')";
-            //DATAPROVIDER provider = new DATAPROVIDER();
-
-            //dataGridView1.DataSource = provider.Executequery(query/*,new object[] { "NV2" }*/);
-=======
             string query = "SELECT TENPT FROM dbo.PHUTUNG ";
             DATAPROVIDER provider = new DATAPROVIDER();
             DataTable tb = new DataTable();
@@ -81,7 +73,6 @@ namespace Source
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
->>>>>>> 4fe023875b0b49133466e341884611d9ec8caddd
 
         }
 

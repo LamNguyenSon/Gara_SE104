@@ -34,17 +34,6 @@ namespace Source
 				this.Hide();
 				f.ShowDialog();
 				this.Show();
-<<<<<<< HEAD
-			}
-			else
-			{
-				MessageBox.Show("Sai tên tài khoản hoặc mật khẩu !");
-			}
-
-
-		}
-		bool login(string username, string password)
-=======
             }
             else
             {
@@ -54,7 +43,6 @@ namespace Source
 
         }
             bool login(string username, string password)
->>>>>>> 4fe023875b0b49133466e341884611d9ec8caddd
 		{
 			accountDAO acc = new accountDAO();
 			return acc.login(username,password);
