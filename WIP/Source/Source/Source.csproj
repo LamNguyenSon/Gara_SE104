@@ -46,12 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Capnhatkhachhang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Capnhatkhachhang.Designer.cs">
-      <DependentUpon>Capnhatkhachhang.cs</DependentUpon>
-    </Compile>
+    <Compile Include="DAO\accountDAO.cs" />
+    <Compile Include="DAO\DATAPROVIDER.cs" />
     <Compile Include="fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +60,7 @@
     <Compile Include="Home_page.Designer.cs">
       <DependentUpon>Home_page.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="ketnoi.cs" />
 <<<<<<< HEAD
     <Compile Include="Lập Phiếu thu tiền.cs">
@@ -95,11 +92,31 @@
     <EmbeddedResource Include="Phiếu thu tiền.resx">
       <DependentUpon>Phiếu thu tiền.cs</DependentUpon>
 =======
+=======
+    <Compile Include="Khachhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Khachhang.designer.cs">
+      <DependentUpon>Khachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nhanvien.Designer.cs">
+      <DependentUpon>Nhanvien.cs</DependentUpon>
+    </Compile>
+>>>>>>> 521a5ebd4e7ad09e999baf7d64f2c8750fcbb1f9
     <Compile Include="PhieuSuaChua.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PhieuSuaChua.Designer.cs">
       <DependentUpon>PhieuSuaChua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Phutung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Phutung.Designer.cs">
+      <DependentUpon>Phutung.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -108,32 +125,38 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\Khachhang.cs">
+    <Compile Include="QL_SUACHUA.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Resources\Khachhang.Designer.cs">
-      <DependentUpon>Khachhang.cs</DependentUpon>
+    <Compile Include="QL_SUACHUA.Designer.cs">
+      <DependentUpon>QL_SUACHUA.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Capnhatkhachhang.resx">
-      <DependentUpon>Capnhatkhachhang.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home_page.resx">
       <DependentUpon>Home_page.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Khachhang.resx">
+      <DependentUpon>Khachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nhanvien.resx">
+      <DependentUpon>Nhanvien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PhieuSuaChua.resx">
       <DependentUpon>PhieuSuaChua.cs</DependentUpon>
 >>>>>>> origin/master
+    </EmbeddedResource>
+    <EmbeddedResource Include="Phutung.resx">
+      <DependentUpon>Phutung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Khachhang.resx">
-      <DependentUpon>Khachhang.cs</DependentUpon>
+    <EmbeddedResource Include="QL_SUACHUA.resx">
+      <DependentUpon>QL_SUACHUA.cs</DependentUpon>
     </EmbeddedResource>
 <<<<<<< HEAD
     <Compile Include="Properties\Resources.Designer.cs">
@@ -159,11 +182,30 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <None Include="image\configuration.png" />
-    <None Include="image\depositphotos_50098993-stock-photo-blue-wood-texture-of-rough.jpg" />
-    <Content Include="image\if_Home_34588.png" />
+    <Folder Include="DTO\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\pen.png" />
+    <None Include="image\user.png" />
+    <None Include="image\atomix_user31.png" />
+    <None Include="image\220px-User_icon_2.svg.png" />
+    <None Include="image\edit.png" />
+    <None Include="image\Actions-document-edit-icon.png" />
+    <None Include="image\Actions-document-edit-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\LoginIconAppl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\login %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\App-login-manager-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
