@@ -25,24 +25,7 @@ namespace Source
 			//loadaccountlist();
 		}
 
-		//public void loadaccountlist()
-		//{
-		//    //EXEC GETACCOUNTBYUSERNAME @USERNAME
-		//    string query = "SELECT *FROM dbo.TAIKHOAN ";
-		//    //string query = "INSERT INTO TAIKHOAN VALUES('TK06','NV6','123456','07/02/1788')";
-		//    DATAPROVIDER provider = new DATAPROVIDER();
-		//    dataGridView1.DataSource = provider.Executequery(query/*,new object[] { "NV2" }*/);
-
-		public void loadaccountlist()
-		{
-			//EXEC GETACCOUNTBYUSERNAME @USERNAME
-			string query = "SELECT *FROM dbo.TAIKHOAN ";
-			// string query = "INSERT INTO TAIKHOAN VALUES('TK06','NV6','123456','07/02/1788')";
-			DATAPROVIDER provider = new DATAPROVIDER();
-			dataGridView1.DataSource = provider.Executequery(query/*new object[] { "NV2" }*/);
-
-
-		}
+	
 		private void Form1_Load(object sender, EventArgs e)
 		{
 
@@ -55,36 +38,24 @@ namespace Source
 
 		private void button2_Click(object sender, EventArgs e)
 		{
-			QUẢN_LÝ_NHÂN_VIÊN f = new QUẢN_LÝ_NHÂN_VIÊN();
-			this.Hide();
-			f.ShowDialog();
+
 		}
 
 		private void khachhang_Click(object sender, EventArgs e)
 		{
-<<<<<<< HEAD
-			
-=======
 			Khachhang f = new Khachhang();
-			this.Hide();
-			f.ShowDialog();
->>>>>>> origin/master
+            f.Show();
 		}
 
 		private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			
+
 		}
 
 		private void button3_Click(object sender, EventArgs e)
 		{
-<<<<<<< HEAD
-			PHIẾU_THU_TIỀN f = new PHIẾU_THU_TIỀN();
-=======
-			Phutung f = new Phutung();
->>>>>>> 521a5ebd4e7ad09e999baf7d64f2c8750fcbb1f9
-			this.Hide();
-			f.ShowDialog();
+            Phutung pt = new Phutung();
+            pt.Show();
 		}
 
 		private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -94,14 +65,13 @@ namespace Source
 
 		private void nhanvien_Click(object sender, EventArgs e)
 		{
-			Nhanvien f = new Nhanvien();
-			this.Hide();
-			f.ShowDialog();
+            Nhanvien nv = new Nhanvien();
+            nv.Show();
 		}
 
 		private void label2_Click(object sender, EventArgs e)
 		{
-
+            
 		}
 
 		private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -121,6 +91,25 @@ namespace Source
 			f.ShowDialog();
 			this.Show();
 		}
-	}
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            QuanLyTaiKhoan ql = new QuanLyTaiKhoan();
+            ql.Show();
+        }
+
+        private void baocaothang_Click(object sender, EventArgs e)
+        {
+            BaoCaoThang f = new BaoCaoThang();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
+        }
+    }
 	}
 

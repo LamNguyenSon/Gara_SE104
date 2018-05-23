@@ -30,7 +30,7 @@ namespace Source.DAO
         }
 
 
-		private string connectionstr = @"Data Source=DESKTOP-6PU4NRQ;Initial Catalog=QL_GARA;Integrated Security=True";
+		private string connectionstr = @"Data Source=NGUYEN-THI-LAN\SQLEXPRESS;Initial Catalog=QL_GARA_Cuong;Integrated Security=True";
 		public DataTable Executequery(string query, Object[] para = null)
 		{
 			SqlConnection connection = new SqlConnection(connectionstr);

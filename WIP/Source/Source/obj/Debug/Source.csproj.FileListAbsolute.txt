@@ -1,30 +1,18 @@
-D:\SE104_NOT\Gara_SE104\WIP\Source\Source\bin\Debug\Source.exe.config
-D:\SE104_NOT\Gara_SE104\WIP\Source\Source\bin\Debug\Source.exe
-D:\SE104_NOT\Gara_SE104\WIP\Source\Source\bin\Debug\Source.pdb
-D:\SE104_NOT\Gara_SE104\WIP\Source\Source\obj\Debug\Source.Capnhatkhachhang.resources
-D:\SE104_NOT\Gara_SE104\WIP\Source\Source\obj\Debug\Source.fLogin.resources
-D:\SE104_NOT\Gara_SE104\WIP\Source\Source\obj\Debug\Source.Home_page.resources
-D:\SE104_NOT\Gara_SE104\WIP\Source\Source\obj\Debug\Source.PhieuSuaChua.resources
-D:\SE104_NOT\Gara_SE104\WIP\Source\Source\obj\Debug\Source.Properties.Resources.resources
-D:\SE104_NOT\Gara_SE104\WIP\Source\Source\obj\Debug\Source.Resources.Khachhang.resources
-D:\SE104_NOT\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csproj.GenerateResource.cache
-D:\SE104_NOT\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csproj.CoreCompileInputs.cache
-D:\SE104_NOT\Gara_SE104\WIP\Source\Source\obj\Debug\Source.exe
-D:\SE104_NOT\Gara_SE104\WIP\Source\Source\obj\Debug\Source.pdb
-<<<<<<< HEAD
-D:\mềm\Gara_SE104\WIP\Source\Source\bin\Debug\Source.exe.config
-D:\mềm\Gara_SE104\WIP\Source\Source\bin\Debug\Source.exe
-D:\mềm\Gara_SE104\WIP\Source\Source\bin\Debug\Source.pdb
-D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csprojResolveAssemblyReference.cache
-D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.Home_page.resources
-D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.Properties.Resources.resources
-D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.Quản_lý_Nhân_viên.resources
-D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csproj.GenerateResource.cache
-D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csproj.CoreCompileInputs.cache
-D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.exe
-D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.pdb
-D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.LẬP_PHIẾU_THU_TIỀN.resources
-D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.PHIẾU_THU_TIỀN.resources
-=======
-D:\SE104_NOT\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csprojResolveAssemblyReference.cache
->>>>>>> origin/master
+D:\Tai Lieu\cua cuong\Gara_SE104\WIP\Source\Source\bin\Debug\Source.exe.config
+D:\Tai Lieu\cua cuong\Gara_SE104\WIP\Source\Source\bin\Debug\Source.exe
+D:\Tai Lieu\cua cuong\Gara_SE104\WIP\Source\Source\bin\Debug\Source.pdb
+D:\Tai Lieu\cua cuong\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csprojResolveAssemblyReference.cache
+D:\Tai Lieu\cua cuong\Gara_SE104\WIP\Source\Source\obj\Debug\Source.BaoCaoThang.resources
+D:\Tai Lieu\cua cuong\Gara_SE104\WIP\Source\Source\obj\Debug\Source.fLogin.resources
+D:\Tai Lieu\cua cuong\Gara_SE104\WIP\Source\Source\obj\Debug\Source.Home_page.resources
+D:\Tai Lieu\cua cuong\Gara_SE104\WIP\Source\Source\obj\Debug\Source.Resources.Khachhang.resources
+D:\Tai Lieu\cua cuong\Gara_SE104\WIP\Source\Source\obj\Debug\Source.Nhanvien.resources
+D:\Tai Lieu\cua cuong\Gara_SE104\WIP\Source\Source\obj\Debug\Source.PhieuSuaChua.resources
+D:\Tai Lieu\cua cuong\Gara_SE104\WIP\Source\Source\obj\Debug\Source.Phutung.resources
+D:\Tai Lieu\cua cuong\Gara_SE104\WIP\Source\Source\obj\Debug\Source.Properties.Resources.resources
+D:\Tai Lieu\cua cuong\Gara_SE104\WIP\Source\Source\obj\Debug\Source.QL_SUACHUA.resources
+D:\Tai Lieu\cua cuong\Gara_SE104\WIP\Source\Source\obj\Debug\Source.QuanLyTaiKhoan.resources
+D:\Tai Lieu\cua cuong\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csproj.GenerateResource.cache
+D:\Tai Lieu\cua cuong\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csproj.CoreCompileInputs.cache
+D:\Tai Lieu\cua cuong\Gara_SE104\WIP\Source\Source\obj\Debug\Source.exe
+D:\Tai Lieu\cua cuong\Gara_SE104\WIP\Source\Source\obj\Debug\Source.pdb
