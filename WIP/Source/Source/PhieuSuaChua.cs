@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Source.QL_SUACHUA;
 
 namespace Source
 {
@@ -17,7 +18,8 @@ namespace Source
 		{
 			InitializeComponent();
             showmanv();
-            showmakh();
+            makh.Text = get_kh.get_ten;
+            makh.Show();
 		}
         void spilit_space(ref string str)
         {
@@ -40,19 +42,7 @@ namespace Source
             }
             MANV.Show();
         }
-        void showmakh()
-        {
-            string query = "SELECT *FROM dbo.KHACHHANG ";
-            DATAPROVIDER provider = new DATAPROVIDER();
-            DataTable tb = new DataTable();
-            tb = provider.Executequery(query);
-            foreach (DataRow row in tb.Rows)
-            {
-                string name = row["MAKH"].ToString();
-                makh.Items.Add(name);
-            }
-            makh.Show();
-        }
+        
         private void label1_Click(object sender, EventArgs e)
 		{
 
@@ -78,11 +68,11 @@ namespace Source
             {
                 string idnv = MANV.SelectedItem.ToString();
                 spilit_space(ref idnv);
-                string idkh = makh.SelectedItem.ToString();
+                string idkh = makh.Text.ToString();
                 spilit_space(ref idkh);
                 string ngaysc = NGAYSUACHUA.Value.ToString();
 
-                string query = "INSERT INTO dbo.PHIEUSUACHUA( MAPSC,MANV,MAKH,NGAYSUACHUA,THANHTIEN)VALUES( '"+MAPSC.Text.ToString()+"','"+idnv+"','"+idkh+"','"+ngaysc+"',"+TIEN.Text.ToString()+") ";
+                string query = "INSERT INTO dbo.PHIEUSUACHUA( MAPSC,MANV,MAKH,NGAYSUACHUA)VALUES( '"+MAPSC.Text.ToString()+"','"+idnv+"','"+idkh+"','"+ngaysc+"')";
                 DATAPROVIDER provider = new DATAPROVIDER();
                 DataTable tb = new DataTable();
                 tb = provider.Executequery(query);

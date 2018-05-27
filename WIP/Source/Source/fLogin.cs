@@ -17,7 +17,10 @@ namespace Source
         {
             InitializeComponent();
         }
-
+        public class get_username
+        {
+            public static string user;
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
            
@@ -26,19 +29,21 @@ namespace Source
         private void button1_Click(object sender, EventArgs e)
         {
             //Vào chương trình 
+            
             string username = textusername.Text;
             string password = textpassword.Text;
-			if (login(username, password))
-			{
+			//if (login(username, password))
+			//{
+                get_username.user = username;
 				Home_page f = new Home_page();
 				this.Hide();
 				f.ShowDialog();
 				this.Show();
-            }
-            else
-            {
-                MessageBox.Show("Sai tên tài khoản hoặc mật khẩu !");
-            }
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Sai tên tài khoản hoặc mật khẩu !");
+            //}
 
 
         }

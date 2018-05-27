@@ -13,7 +13,11 @@ namespace Source
 {
     public partial class QL_SUACHUA : Form
     {
-        
+        public class get_kh
+        {
+            public static string get_ten;
+        }
+
         public QL_SUACHUA()
         {
             InitializeComponent();
@@ -63,10 +67,10 @@ namespace Source
             tb = provider.Executequery(query);
             foreach (DataRow row in tb.Rows)
             {
-                string name = row["HOTEN"].ToString();
-                tenkhachhang.Items.Add(name);
+                string name = row["MAKH"].ToString();
+                makh.Items.Add(name);
             }
-            tenkhachhang.Show();
+            makh.Show();
             
             
         }
@@ -83,7 +87,8 @@ namespace Source
 
         private void tenkhachhang_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            string query = "SELECT *FROM dbo.KHACHHANG WHERE HOTEN= '" + tenkhachhang.SelectedItem.ToString() + "'";
+            get_kh.get_ten = makh.Text.ToString();
+            string query = "SELECT *FROM dbo.KHACHHANG WHERE MAKH= '" + makh.SelectedItem.ToString() + "'";
             DATAPROVIDER provider = new DATAPROVIDER();
             DataTable tb = new DataTable();
             tb = provider.Executequery(query);

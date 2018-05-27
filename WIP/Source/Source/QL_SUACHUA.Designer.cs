@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.THANHTIEN = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.slptsd = new System.Windows.Forms.TextBox();
@@ -45,6 +48,7 @@
             this.MOTA = new System.Windows.Forms.TextBox();
             this.LOAISC = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.addphieusuachua = new System.Windows.Forms.Button();
             this.bienso = new System.Windows.Forms.TextBox();
             this.loaixe = new System.Windows.Forms.TextBox();
             this.cmnd = new System.Windows.Forms.TextBox();
@@ -54,13 +58,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.tenkhachhang = new System.Windows.Forms.ComboBox();
+            this.makh = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.addphieusuachua = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.THANHTIEN = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -83,6 +83,32 @@
             this.panel1.Size = new System.Drawing.Size(948, 628);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(863, 412);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(30, 13);
+            this.label15.TabIndex = 7;
+            this.label15.Text = "VND";
+            // 
+            // THANHTIEN
+            // 
+            this.THANHTIEN.Enabled = false;
+            this.THANHTIEN.Location = new System.Drawing.Point(693, 409);
+            this.THANHTIEN.Name = "THANHTIEN";
+            this.THANHTIEN.Size = new System.Drawing.Size(164, 20);
+            this.THANHTIEN.TabIndex = 6;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(607, 416);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(68, 13);
+            this.label14.TabIndex = 5;
+            this.label14.Text = "Thành Tiền :";
             // 
             // label12
             // 
@@ -242,11 +268,22 @@
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.tenkhachhang);
+            this.panel2.Controls.Add(this.makh);
             this.panel2.Location = new System.Drawing.Point(65, 74);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(419, 319);
             this.panel2.TabIndex = 2;
+            // 
+            // addphieusuachua
+            // 
+            this.addphieusuachua.Enabled = false;
+            this.addphieusuachua.Location = new System.Drawing.Point(208, 259);
+            this.addphieusuachua.Name = "addphieusuachua";
+            this.addphieusuachua.Size = new System.Drawing.Size(143, 40);
+            this.addphieusuachua.TabIndex = 22;
+            this.addphieusuachua.Text = "Thêm Phiếu Sữa Chữa";
+            this.addphieusuachua.UseVisualStyleBackColor = true;
+            this.addphieusuachua.Click += new System.EventHandler(this.button2_Click);
             // 
             // bienso
             // 
@@ -325,14 +362,14 @@
             this.label2.TabIndex = 13;
             this.label2.Text = "Chọn Khách Hàng :";
             // 
-            // tenkhachhang
+            // makh
             // 
-            this.tenkhachhang.FormattingEnabled = true;
-            this.tenkhachhang.Location = new System.Drawing.Point(208, 49);
-            this.tenkhachhang.Name = "tenkhachhang";
-            this.tenkhachhang.Size = new System.Drawing.Size(152, 21);
-            this.tenkhachhang.TabIndex = 12;
-            this.tenkhachhang.SelectedIndexChanged += new System.EventHandler(this.tenkhachhang_SelectedIndexChanged_1);
+            this.makh.FormattingEnabled = true;
+            this.makh.Location = new System.Drawing.Point(208, 49);
+            this.makh.Name = "makh";
+            this.makh.Size = new System.Drawing.Size(152, 21);
+            this.makh.TabIndex = 12;
+            this.makh.SelectedIndexChanged += new System.EventHandler(this.tenkhachhang_SelectedIndexChanged_1);
             // 
             // label1
             // 
@@ -350,46 +387,9 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(128, 439);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(642, 197);
+            this.dataGridView1.Size = new System.Drawing.Size(642, 182);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // addphieusuachua
-            // 
-            this.addphieusuachua.Enabled = false;
-            this.addphieusuachua.Location = new System.Drawing.Point(208, 259);
-            this.addphieusuachua.Name = "addphieusuachua";
-            this.addphieusuachua.Size = new System.Drawing.Size(143, 40);
-            this.addphieusuachua.TabIndex = 22;
-            this.addphieusuachua.Text = "Thêm Phiếu Sữa Chữa";
-            this.addphieusuachua.UseVisualStyleBackColor = true;
-            this.addphieusuachua.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(607, 416);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(68, 13);
-            this.label14.TabIndex = 5;
-            this.label14.Text = "Thành Tiền :";
-            // 
-            // THANHTIEN
-            // 
-            this.THANHTIEN.Enabled = false;
-            this.THANHTIEN.Location = new System.Drawing.Point(693, 409);
-            this.THANHTIEN.Name = "THANHTIEN";
-            this.THANHTIEN.Size = new System.Drawing.Size(164, 20);
-            this.THANHTIEN.TabIndex = 6;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(863, 412);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(30, 13);
-            this.label15.TabIndex = 7;
-            this.label15.Text = "VND";
             // 
             // QL_SUACHUA
             // 
@@ -426,7 +426,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox tenkhachhang;
+        private System.Windows.Forms.ComboBox makh;
         private System.Windows.Forms.ComboBox LOAIPT;
         private System.Windows.Forms.ComboBox MAPSC;
         private System.Windows.Forms.Label label11;
