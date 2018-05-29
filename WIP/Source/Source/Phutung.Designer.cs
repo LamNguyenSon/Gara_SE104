@@ -265,7 +265,9 @@
 			this.cmdTimKiem.TabIndex = 31;
 			this.cmdTimKiem.Text = "Tìm kiếm";
 			this.cmdTimKiem.UseVisualStyleBackColor = true;
+
 			//this.cmdTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
+
 			this.cmdTimKiem.Click += new System.EventHandler(this.cmdTimKiem_Click);
 			// 
 			// cmdQuayLai

@@ -56,7 +56,9 @@ namespace Source
 			if (txtMaNV.Text != "" && txtDiaChi.Text != "" && txtHoTen.Text != "")
 			{
 				DATAPROVIDER kn = new DATAPROVIDER();
+
 				int kq = kn.Executenonquery("insert into NHANVIEN(MANV,MATK,HOTEN,CMND,NGAYSINH,GIOITINH,DIACHI,SDT) values('" + txtMaNV.Text + "','" + txtMaTK.Text + "','" + txtHoTen.Text + "','" + txtCMND.Text + "','" + dtNgaySinh.Text + "','" + coboGioiTinh.Text + "','" + txtDiaChi.Text + "','" + txtSDT.Text + "')");
+
 				if (kq > 0)
 				{
 					MessageBox.Show("Thêm thành công");
@@ -152,7 +154,9 @@ namespace Source
 		{
 			DATAPROVIDER kn = new DATAPROVIDER();
 			DataTable dt = new DataTable();
+
 			dt = kn.Executequery("select * from NHANVIEN where HOTEN like'%" + txtTimKiem.Text + "%' ");
+
 			dataGridNhanVien.DataSource = dt;
 		}
 
@@ -225,12 +229,16 @@ namespace Source
 				int kq = kn.Executenonquery("update NHANVIEN set HOTEN='" + txtHoTen.Text + "', CMND='" + txtCMND.Text + "',NGAYSINH='" + dtNgaySinh.Text + "',GIOITINH= '" + coboGioiTinh.Text + "',DIACHI='" + txtDiaChi.Text + "',SDT='" + txtSDT.Text + "' where MAKH='" + txtMaNV.Text + "'");
 				if (kq > 0)
 				{
+
 					MessageBox.Show("Thêm thành công");
+
 					LayBangNV();
 				}
 				else
 				{
+
 					MessageBox.Show("Thêm không thành công, vui lòng kiểm tra lại");
+
 				}
 			}
 		}
