@@ -43,15 +43,19 @@ namespace Source
 			if (txtMaPT.Text != "" && txtDonGia.Text != "" && txtMaBCT.Text != "")
 			{
 				DATAPROVIDER kn = new DATAPROVIDER();
-				int kq = kn.Executenonquery("delete from PHUTUNG where MaPT='" + txtMaPT.Text + "'");
+
+				int kq = kn.Executenonquery("insert into PHUTUNG(MAPT,MABCT,TENPHUTUNG,DONGIA,SOLUONG,NGAYNHAP) values('" + txtMaPT.Text + "','" + txtMaBCT.Text + "','" + txtTenPhuTung.Text + "','" + txtDonGia.Text + "','" + txtSoLuong.Text + "','" + dtNgayNhap.Text + "')");
 				if (kq > 0)
 				{
-					MessageBox.Show("Sửa thành công");
+					MessageBox.Show("Thêm thành công");
+
 					LayBangPT();
 				}
 				else
 				{
-					MessageBox.Show("Sửa không thành công, vui lòng kiểm tra lại");
+
+					MessageBox.Show("Thêm không thành công, vui lòng kiểm tra lại");
+
 				}
 			}
 		}
@@ -76,12 +80,16 @@ namespace Source
 				int kq = kn.Executenonquery("delete from PHUTUNG where MaPT='" + txtMaPT.Text + "'");
 				if (kq > 0)
 				{
-					MessageBox.Show("Sửa thành công");
+
+					MessageBox.Show("Xóa thành công");
+
 					LayBangPT();
 				}
 				else
 				{
-					MessageBox.Show("Sửa không thành công, vui lòng kiểm tra lại");
+
+					MessageBox.Show("Xóa không thành công, vui lòng kiểm tra lại");
+
 				}
 			}
 		}
@@ -139,7 +147,9 @@ namespace Source
 		{
 			DATAPROVIDER kn = new DATAPROVIDER();
 			DataTable dt = new DataTable();
-			dt = kn.Executequery("select * from PHUTUNG where Name like'%" + txtTimKiem.Text + "%' ");
+
+			dt = kn.Executequery("select * from PHUTUNG where TENPHUTUNG like'%" + txtTimKiem.Text + "%' ");
+
 			dataGridPhuTung.DataSource = dt;
 		}
 
@@ -148,7 +158,10 @@ namespace Source
 			LoadListByKeyWord();
 		}
 
-		private void txtTimKiem_TextChanged(object sender, EventArgs e)
+
+
+		private void txtTimKiem_TextChanged_1(object sender, EventArgs e)
+
 		{
 			LoadListByKeyWord();
 		}

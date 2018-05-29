@@ -45,12 +45,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+
     <Compile Include="BaoCaoThang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BaoCaoThang.Designer.cs">
       <DependentUpon>BaoCaoThang.cs</DependentUpon>
     </Compile>
+
     <Compile Include="DAO\accountDAO.cs" />
     <Compile Include="DAO\DATAPROVIDER.cs" />
     <Compile Include="fLogin.cs">
@@ -102,6 +104,7 @@
     <Compile Include="QL_SUACHUA.Designer.cs">
       <DependentUpon>QL_SUACHUA.cs</DependentUpon>
     </Compile>
+
     <Compile Include="QuanLyTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +114,7 @@
     <EmbeddedResource Include="BaoCaoThang.resx">
       <DependentUpon>BaoCaoThang.cs</DependentUpon>
     </EmbeddedResource>
+
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
