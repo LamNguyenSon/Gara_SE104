@@ -15,7 +15,6 @@ using static Source.fLogin;
 
 namespace Source
 {
-
 	/// <summary>
 	/// ////////////////
 	/// </summary>
@@ -28,27 +27,11 @@ namespace Source
 			//loadaccountlist();
 		}
 
-		//public void loadaccountlist()
-		//{
-		//    //EXEC GETACCOUNTBYUSERNAME @USERNAME
-		//    string query = "SELECT *FROM dbo.TAIKHOAN ";
-		//    //string query = "INSERT INTO TAIKHOAN VALUES('TK06','NV6','123456','07/02/1788')";
-		//    DATAPROVIDER provider = new DATAPROVIDER();
-		//    dataGridView1.DataSource = provider.Executequery(query/*,new object[] { "NV2" }*/);
 
-		public void loadaccountlist()
-		{
-			//EXEC GETACCOUNTBYUSERNAME @USERNAME
-			string query = "SELECT *FROM dbo.TAIKHOAN ";
-			// string query = "INSERT INTO TAIKHOAN VALUES('TK06','NV6','123456','07/02/1788')";
-			DATAPROVIDER provider = new DATAPROVIDER();
-			dataGridView1.DataSource = provider.Executequery(query/*new object[] { "NV2" }*/);
-
-
-		}
 		private void Form1_Load(object sender, EventArgs e)
 		{
-
+			name.Text = get_username.user;
+			name.Show();
 		}
 
 		private void button1_Click(object sender, EventArgs e)
@@ -56,44 +39,38 @@ namespace Source
 
 		}
 
+		private void button2_Click(object sender, EventArgs e)
+		{
 
-        private void button2_Click(object sender, EventArgs e)
-        {
+		}
 
-        }
+		private void khachhang_Click(object sender, EventArgs e)
+		{
+			Khachhang f = new Khachhang();
+			f.Show();
+		}
 
-        private void khachhang_Click(object sender, EventArgs e)
-        {
-            Khachhang f = new Khachhang();
-            f.Show();
-        }
+		private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+		{
 
+		}
 
 		private void button3_Click(object sender, EventArgs e)
 		{
-			Phutung f = new Phutung();
-			this.Hide();
-			f.ShowDialog();
+			Phutung pt = new Phutung();
+			pt.Show();
 		}
 
+		private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+		{
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Phutung pt = new Phutung();
-            pt.Show();
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
+		}
 
 		private void nhanvien_Click(object sender, EventArgs e)
 		{
-			Nhanvien f = new Nhanvien();
-			this.Hide();
-			f.ShowDialog();
+			Nhanvien nv = new Nhanvien();
+			nv.Show();
 		}
-
 
 		private void label2_Click(object sender, EventArgs e)
 		{
@@ -117,43 +94,31 @@ namespace Source
 			f.ShowDialog();
 			this.Show();
 		}
+
+		private void panel2_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+
+		private void button4_Click(object sender, EventArgs e)
+		{
+			QuanLyTaiKhoan ql = new QuanLyTaiKhoan();
+			ql.Show();
+		}
+
+		private void baocaothang_Click(object sender, EventArgs e)
+		{
+			BaoCaoThang f = new BaoCaoThang();
+			this.Hide();
+			f.ShowDialog();
+			this.Show();
+		}
+
+		private void button1_Click_1(object sender, EventArgs e)
+		{
+
+		}
+
+
 	}
-	}
-
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            QL_SUACHUA f = new QL_SUACHUA();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            QuanLyTaiKhoan ql = new QuanLyTaiKhoan();
-            ql.Show();
-        }
-
-        private void baocaothang_Click(object sender, EventArgs e)
-        {
-            BaoCaoThang f = new BaoCaoThang();
-            this.Hide();
-            f.ShowDialog();
-            this.Show();
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        
-    }
 }
-
