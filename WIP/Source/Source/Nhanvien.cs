@@ -213,7 +213,7 @@ namespace Source
 			}
 			if (txtMaTK.Text == "")
 			{
-				errorProvider1.SetError(txtMaTK, "Bạn chưa nhập MaTK");
+				errorProvider1.SetError(txtMaTK, "Bạn chưa nhập tMaTK");
 			}
 			if (txtDiaChi.Text == "")
 			{
@@ -226,7 +226,7 @@ namespace Source
 			if (txtMaNV.Text != "" && txtDiaChi.Text != "" && txtHoTen.Text != "")
 			{
 				DATAPROVIDER kn = new DATAPROVIDER();
-				int kq = kn.Executenonquery("update NHANVIEN set HOTEN='" + txtHoTen.Text + "', CMND='" + txtCMND.Text + "',NGAYSINH='" + dtNgaySinh.Text + "',GIOITINH= '" + coboGioiTinh.Text + "',DIACHI='" + txtDiaChi.Text + "',SDT='" + txtSDT.Text + "' where MANV='" + txtMaNV.Text + "'");
+				int kq = kn.Executenonquery("update NHANVIEN set HOTEN='" + txtHoTen.Text + "', CMND='" + txtCMND.Text + "',NGAYSINH='" + dtNgaySinh.Text + "',GIOITINH= '" + coboGioiTinh.Text + "',DIACHI='" + txtDiaChi.Text + "',SDT='" + txtSDT.Text + "' where MAKH='" + txtMaNV.Text + "'");
 				if (kq > 0)
 				{
 

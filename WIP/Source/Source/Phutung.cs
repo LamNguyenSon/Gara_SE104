@@ -165,10 +165,5 @@ namespace Source
 		{
 			LoadListByKeyWord();
 		}
-
-		private void txtTimKiem_TextChanged(object sender, EventArgs e)
-		{
-			LoadListByKeyWord();
-		}
 	}
 }
