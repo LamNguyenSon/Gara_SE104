@@ -16,3 +16,21 @@ D:\Tai Lieu\cua cuong\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csproj.Gener
 D:\Tai Lieu\cua cuong\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csproj.CoreCompileInputs.cache
 D:\Tai Lieu\cua cuong\Gara_SE104\WIP\Source\Source\obj\Debug\Source.exe
 D:\Tai Lieu\cua cuong\Gara_SE104\WIP\Source\Source\obj\Debug\Source.pdb
+D:\mềm\Gara_SE104\WIP\Source\Source\bin\Debug\Source.exe.config
+D:\mềm\Gara_SE104\WIP\Source\Source\bin\Debug\Source.exe
+D:\mềm\Gara_SE104\WIP\Source\Source\bin\Debug\Source.pdb
+D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csprojResolveAssemblyReference.cache
+D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.BaoCaoThang.resources
+D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.fLogin.resources
+D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.Home_page.resources
+D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.Resources.Khachhang.resources
+D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.Nhanvien.resources
+D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.PhieuSuaChua.resources
+D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.Phutung.resources
+D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.Properties.Resources.resources
+D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.QL_SUACHUA.resources
+D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.QuanLyTaiKhoan.resources
+D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csproj.GenerateResource.cache
+D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.csproj.CoreCompileInputs.cache
+D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.exe
+D:\mềm\Gara_SE104\WIP\Source\Source\obj\Debug\Source.pdb
