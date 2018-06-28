@@ -116,9 +116,18 @@ namespace Source
 
 		private void button1_Click_1(object sender, EventArgs e)
 		{
-
+			Home_page f = new Home_page();
+			this.Hide();
+			f.ShowDialog();
+			this.Show();
 		}
 
-
+		private void button6_Click(object sender, EventArgs e)
+		{
+			About_us f = new About_us();
+			this.Hide();
+			f.ShowDialog();
+			this.Show();
+		}
 	}
 }

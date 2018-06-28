@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,14 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-
     <Compile Include="BaoCaoThang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BaoCaoThang.Designer.cs">
       <DependentUpon>BaoCaoThang.cs</DependentUpon>
     </Compile>
-
     <Compile Include="DAO\accountDAO.cs" />
     <Compile Include="DAO\DATAPROVIDER.cs" />
     <Compile Include="fLogin.cs">
@@ -60,6 +59,12 @@
     </Compile>
     <Compile Include="fLogin.designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="About_us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About_us.Designer.cs">
+      <DependentUpon>About_us.cs</DependentUpon>
     </Compile>
     <Compile Include="Home_page.cs">
       <SubType>Form</SubType>
@@ -104,7 +109,6 @@
     <Compile Include="QL_SUACHUA.Designer.cs">
       <DependentUpon>QL_SUACHUA.cs</DependentUpon>
     </Compile>
-
     <Compile Include="QuanLyTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,9 +118,11 @@
     <EmbeddedResource Include="BaoCaoThang.resx">
       <DependentUpon>BaoCaoThang.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="About_us.resx">
+      <DependentUpon>About_us.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home_page.resx">
       <DependentUpon>Home_page.cs</DependentUpon>
