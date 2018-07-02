@@ -76,6 +76,7 @@
 			this.dataGridPhuTung.Name = "dataGridPhuTung";
 			this.dataGridPhuTung.Size = new System.Drawing.Size(729, 145);
 			this.dataGridPhuTung.TabIndex = 0;
+			this.dataGridPhuTung.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridPhuTung_CellClick);
 			this.dataGridPhuTung.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridPhuTung_CellContentClick);
 			// 
 			// groupBox1

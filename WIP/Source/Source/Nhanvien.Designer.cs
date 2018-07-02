@@ -309,6 +309,7 @@
 			this.dataGridNhanVien.Name = "dataGridNhanVien";
 			this.dataGridNhanVien.Size = new System.Drawing.Size(729, 145);
 			this.dataGridNhanVien.TabIndex = 0;
+			this.dataGridNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridNhanVien_CellClick);
 			this.dataGridNhanVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridNhanVien_CellContentClick);
 			// 
 			// errorProvider1

@@ -190,5 +190,25 @@ namespace Source
 
 			}
 		}
+
+		private void dataGridPhuTung_CellClick(object sender, DataGridViewCellEventArgs e)
+		{
+			try
+			{
+				DataGridViewRow row = new DataGridViewRow();
+
+				row = dataGridPhuTung.Rows[e.RowIndex];
+				txtMaPT.Text = row.Cells[0].Value.ToString();
+				txtMaBCT.Text = row.Cells[1].Value.ToString();
+				txtTenPhuTung.Text = row.Cells[2].Value.ToString();
+				txtDonGia.Text = row.Cells[3].Value.ToString();
+				txtSoLuong.Text = row.Cells[5].Value.ToString();
+				dtNgayNhap.Text = row.Cells[6].Value.ToString();
+			}
+			catch
+			{
+
+			}
+		}
 	}
 }
