@@ -133,7 +133,24 @@ namespace Source
 
 		private void dataGridNhanVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
 		{
+			try
+			{
+				DataGridViewRow row = new DataGridViewRow();
 
+				row = dataGridNhanVien.Rows[e.RowIndex];
+				txtMaNV.Text = row.Cells[0].Value.ToString();
+				txtMaTK.Text = row.Cells[1].Value.ToString();
+				txtHoTen.Text = row.Cells[2].Value.ToString();
+				coboGioiTinh.Text = row.Cells[3].Value.ToString();
+				dtNgaySinh.Text = row.Cells[4].Value.ToString();
+				txtSDT.Text = row.Cells[5].Value.ToString();
+				txtCMND.Text = row.Cells[6].Value.ToString();
+				txtDiaChi.Text = row.Cells[7].Value.ToString();
+			}
+			catch
+			{
+
+			}
 		}
 
 		private void NhanVien_Click(object sender, EventArgs e)

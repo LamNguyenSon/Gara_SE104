@@ -254,8 +254,8 @@ namespace Source.Resources
 				txtSDT.Text = row.Cells[4].Value.ToString();
 				txtCMND.Text = row.Cells[5].Value.ToString();
 				txtDiaChi.Text = row.Cells[6].Value.ToString();
-				txtBienSo.Text = row.Cells[6].Value.ToString();
-				txtLoaiXe.Text = row.Cells[6].Value.ToString();
+				txtBienSo.Text = row.Cells[7].Value.ToString();
+				txtLoaiXe.Text = row.Cells[8].Value.ToString();
 			}
 			catch
 			{
