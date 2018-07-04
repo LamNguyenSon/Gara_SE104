@@ -33,8 +33,8 @@ namespace Source
             
             string username = textusername.Text;
             string password = textpassword.Text;
-			//if (login(username, password))
-			//{
+			if (login(username, password))
+			{
                 get_username.user = username;
 
 				Home_page f = new Home_page();
@@ -42,11 +42,11 @@ namespace Source
 				f.ShowDialog();
 				this.Show();
 
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Sai tên tài khoản hoặc mật khẩu !");
-            //}
+            }
+            else
+            {
+                MessageBox.Show("Sai tên tài khoản hoặc mật khẩu !");
+            }
 
 
 

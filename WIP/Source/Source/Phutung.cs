@@ -22,7 +22,9 @@ namespace Source
 		}
 		public Phutung()
 		{
+            
 			InitializeComponent();
+            LayBangPT();
 		}
 
 		private void cmdThem_Click(object sender, EventArgs e)
@@ -44,7 +46,7 @@ namespace Source
 			{
 				DATAPROVIDER kn = new DATAPROVIDER();
 
-				int kq = kn.Executenonquery("insert into PHUTUNG(MAPT,MABCT,TENPHUTUNG,DONGIA,SOLUONG,NGAYNHAP) values('" + txtMaPT.Text + "','" + txtMaBCT.Text + "','" + txtTenPhuTung.Text + "','" + txtDonGia.Text + "','" + txtSoLuong.Text + "','" + dtNgayNhap.Text + "')");
+				int kq = kn.Executenonquery("insert into PHUTUNG(MAPT,MABCT,TENPT,DONGGIA,SOLUONG) values('" + txtMaPT.Text + "','" + txtMaBCT.Text + "','" + txtTenPhuTung.Text + "','" + txtDonGia.Text + "','" + txtSoLuong.Text + "')");
 				if (kq > 0)
 				{
 					MessageBox.Show("Thêm thành công");
@@ -111,7 +113,7 @@ namespace Source
 			if (txtMaPT.Text != "" && txtDonGia.Text != "" && txtMaBCT.Text != "")
 			{
 				DATAPROVIDER kn = new DATAPROVIDER();
-				int kq = kn.Executenonquery("update PHUTUNG set TENPHUTUNG='" + txtTenPhuTung.Text + "', DONGIA='" + txtDonGia.Text + "',SOLUONG='" + txtSoLuong.Text + "',NGAYNHAP='" + dtNgayNhap.Text + "'");
+				int kq = kn.Executenonquery("update PHUTUNG set TENPT='" + txtTenPhuTung.Text + "', DONGGIA='" + txtDonGia.Text + "',SOLUONG='" + txtSoLuong.Text + "'");
 				if (kq > 0)
 				{
 					MessageBox.Show("Sửa thành công");
@@ -148,7 +150,7 @@ namespace Source
 			DATAPROVIDER kn = new DATAPROVIDER();
 			DataTable dt = new DataTable();
 
-			dt = kn.Executequery("select * from PHUTUNG where TENPHUTUNG like'%" + txtTimKiem.Text + "%' ");
+			dt = kn.Executequery("select * from PHUTUNG where TENPT like'%" + txtTimKiem.Text + "%' ");
 
 			dataGridPhuTung.DataSource = dt;
 		}
@@ -182,8 +184,7 @@ namespace Source
 				txtMaBCT.Text = row.Cells[1].Value.ToString();
 				txtTenPhuTung.Text = row.Cells[2].Value.ToString();
 				txtDonGia.Text = row.Cells[3].Value.ToString();
-				txtSoLuong.Text = row.Cells[5].Value.ToString();
-				dtNgayNhap.Text = row.Cells[6].Value.ToString();
+				txtSoLuong.Text = row.Cells[4].Value.ToString();
 			}
 			catch
 			{
@@ -193,6 +194,7 @@ namespace Source
 
 		private void dataGridPhuTung_CellClick(object sender, DataGridViewCellEventArgs e)
 		{
+            LayBangPT();
 			try
 			{
 				DataGridViewRow row = new DataGridViewRow();
@@ -202,8 +204,7 @@ namespace Source
 				txtMaBCT.Text = row.Cells[1].Value.ToString();
 				txtTenPhuTung.Text = row.Cells[2].Value.ToString();
 				txtDonGia.Text = row.Cells[3].Value.ToString();
-				txtSoLuong.Text = row.Cells[5].Value.ToString();
-				dtNgayNhap.Text = row.Cells[6].Value.ToString();
+				txtSoLuong.Text = row.Cells[4].Value.ToString();
 			}
 			catch
 			{
